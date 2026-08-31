@@ -1,6 +1,13 @@
-import { cn } from "@/lib/utils/cn";
-import type { ComponentProps } from "react";
+import type { PropsWithChildren } from "react";
+import Navbar from "../header/navbar";
 
-export default function Main({ className, ...props }: ComponentProps<"main">) {
-  return <main className={cn(`pt-12`, className)} {...props} />;
+export default function Main({ children }: PropsWithChildren) {
+  return (
+    <div className="flex min-h-svh flex-col bg-background text-foreground">
+      
+      <main className="grow">
+        {children}
+      </main>
+    </div>
+  );
 }

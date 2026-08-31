@@ -6,7 +6,7 @@ import {
 import { DevTool } from "@/integrations/tanstack/devtools";
 import appCss from "@/styles.css?url";
 import type { QueryClient } from "@tanstack/react-query";
-import {Header} from "@/components/header/header";
+import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/footer";
 import { NotFound } from "@/components/main/not-found";
 
