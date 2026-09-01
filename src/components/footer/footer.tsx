@@ -2,123 +2,44 @@ import { cn } from "@/lib/utils/cn";
 import { Link } from "@tanstack/react-router";
 import type { ComponentProps } from "react";
 
-export  function Footer({
-  className,
-  ...props
-}: ComponentProps<"footer">) {
+export function Footer({ className, ...props }: ComponentProps<"footer">) {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer
       className={cn(
-        `
-        border-t
-        border-primary-100
-        bg-background
-        text-foreground
-        dark:border-primary-900
-        `,
-        className
+        `border-primary-100 bg-background text-foreground dark:border-primary-900 border-t`,
+        className,
       )}
       {...props}
     >
       {/* Main Footer */}
-      <div
-        className="
-          mx-auto
-          grid
-          w-full
-          max-w-7xl
-          gap-10
-          px-4
-          py-12
-          2xs:px-5
-          sm:px-6
-          md:grid-cols-2
-          lg:grid-cols-4
-          lg:px-8
-          lg:py-16
-        "
-      >
+      <div className="2xs:px-5 mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8 lg:py-16">
         {/* Brand */}
         <div className="md:col-span-2 lg:col-span-1">
-          <Link
-            to="/"
-            className="
-              inline-flex
-              items-center
-              gap-3
-            "
-          >
-            <div
-              className="
-                flex
-                size-10
-                items-center
-                justify-center
-                rounded-xl
-                bg-primary-600
-                font-brand-secondary
-                text-lg
-                font-bold
-                text-white
-                shadow-sm
-              "
-            >
+          <Link to="/" className="inline-flex items-center gap-3">
+            <div className="bg-primary-600 font-brand-secondary flex size-10 items-center justify-center rounded-xl text-lg font-bold text-white shadow-sm">
               L
             </div>
 
             <div>
-              <h2
-                className="
-                  font-brand-secondary
-                  text-xl
-                  font-bold
-                  leading-none
-                  text-primary-700
-                  dark:text-primary-300
-                "
-              >
+              <h2 className="font-brand-secondary text-primary-700 dark:text-primary-300 text-xl leading-none font-bold">
                 LoanEase
               </h2>
 
-              <p className="mt-1 text-[10px] font-medium text-foreground/45">
+              <p className="text-foreground/45 mt-1 text-[10px] font-medium">
                 Finance made simple
               </p>
             </div>
           </Link>
 
-          <p
-            className="
-              mt-5
-              max-w-sm
-              text-sm
-              leading-6
-              text-foreground/55
-            "
-          >
-            Simple, transparent and flexible loan solutions designed to help
-            you achieve your financial goals.
+          <p className="text-foreground/55 mt-5 max-w-sm text-sm leading-6">
+            Simple, transparent and flexible loan solutions designed to help you
+            achieve your financial goals.
           </p>
 
           {/* Trust */}
-          <div
-            className="
-              mt-5
-              inline-flex
-              items-center
-              gap-2
-              rounded-xl
-              bg-secondary-50
-              px-3
-              py-2
-              text-xs
-              font-semibold
-              text-secondary-800
-              dark:bg-secondary-950
-              dark:text-secondary-200
-            "
-          >
+          <div className="bg-secondary-50 text-secondary-800 dark:bg-secondary-950 dark:text-secondary-200 mt-5 inline-flex items-center gap-2 rounded-xl px-3 py-2 text-xs font-semibold">
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -138,23 +59,13 @@ export  function Footer({
                 d="m9 12 2 2 4-4"
               />
             </svg>
-
             Safe & Secure
           </div>
         </div>
 
         {/* Navigation */}
         <div>
-          <h3
-            className="
-              font-brand-secondary
-              text-sm
-              font-bold
-              uppercase
-              tracking-wider
-              text-foreground
-            "
-          >
+          <h3 className="font-brand-secondary text-foreground text-sm font-bold tracking-wider uppercase">
             Navigation
           </h3>
 
@@ -164,16 +75,9 @@ export  function Footer({
               activeOptions={{
                 exact: true,
               }}
-              className="
-                text-sm
-                font-medium
-                text-foreground/55
-                transition-colors
-                hover:text-primary-600
-              "
+              className="text-foreground/55 hover:text-primary-600 text-sm font-medium transition-colors"
               activeProps={{
-                className:
-                  "text-primary-600 dark:text-primary-400",
+                className: "text-primary-600 dark:text-primary-400",
               }}
             >
               Home
@@ -181,16 +85,9 @@ export  function Footer({
 
             <Link
               to="/contact-us"
-              className="
-                text-sm
-                font-medium
-                text-foreground/55
-                transition-colors
-                hover:text-primary-600
-              "
+              className="text-foreground/55 hover:text-primary-600 text-sm font-medium transition-colors"
               activeProps={{
-                className:
-                  "text-primary-600 dark:text-primary-400",
+                className: "text-primary-600 dark:text-primary-400",
               }}
             >
               Contact Us
@@ -200,29 +97,11 @@ export  function Footer({
 
         {/* Loan Services */}
         <div>
-          <h3
-            className="
-              font-brand-secondary
-              text-sm
-              font-bold
-              uppercase
-              tracking-wider
-            "
-          >
+          <h3 className="font-brand-secondary text-sm font-bold tracking-wider uppercase">
             Loan Services
           </h3>
 
-          <div
-            className="
-              mt-5
-              flex
-              flex-col
-              gap-3
-              text-sm
-              font-medium
-              text-foreground/55
-            "
-          >
+          <div className="text-foreground/55 mt-5 flex flex-col gap-3 text-sm font-medium">
             <span>Personal Loan</span>
             <span>Home Loan</span>
             <span>Education Loan</span>
@@ -232,35 +111,14 @@ export  function Footer({
 
         {/* Contact */}
         <div>
-          <h3
-            className="
-              font-brand-secondary
-              text-sm
-              font-bold
-              uppercase
-              tracking-wider
-            "
-          >
+          <h3 className="font-brand-secondary text-sm font-bold tracking-wider uppercase">
             Get In Touch
           </h3>
 
           <div className="mt-5 space-y-4">
             {/* Phone */}
             <div className="flex items-start gap-3">
-              <div
-                className="
-                  flex
-                  size-9
-                  shrink-0
-                  items-center
-                  justify-center
-                  rounded-xl
-                  bg-primary-50
-                  text-primary-600
-                  dark:bg-primary-950
-                  dark:text-primary-300
-                "
-              >
+              <div className="bg-primary-50 text-primary-600 dark:bg-primary-950 dark:text-primary-300 flex size-9 shrink-0 items-center justify-center rounded-xl">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -282,32 +140,15 @@ export  function Footer({
               </div>
 
               <div>
-                <p className="text-xs text-foreground/40">
-                  Call us
-                </p>
+                <p className="text-foreground/40 text-xs">Call us</p>
 
-                <p className="mt-0.5 text-sm font-semibold">
-                  +91 98765 43210
-                </p>
+                <p className="mt-0.5 text-sm font-semibold">+91 98765 43210</p>
               </div>
             </div>
 
             {/* Email */}
             <div className="flex items-start gap-3">
-              <div
-                className="
-                  flex
-                  size-9
-                  shrink-0
-                  items-center
-                  justify-center
-                  rounded-xl
-                  bg-primary-50
-                  text-primary-600
-                  dark:bg-primary-950
-                  dark:text-primary-300
-                "
-              >
+              <div className="bg-primary-50 text-primary-600 dark:bg-primary-950 dark:text-primary-300 flex size-9 shrink-0 items-center justify-center rounded-xl">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -333,18 +174,9 @@ export  function Footer({
               </div>
 
               <div>
-                <p className="text-xs text-foreground/40">
-                  Email us
-                </p>
+                <p className="text-foreground/40 text-xs">Email us</p>
 
-                <p
-                  className="
-                    mt-0.5
-                    break-all
-                    text-sm
-                    font-semibold
-                  "
-                >
+                <p className="mt-0.5 text-sm font-semibold break-all">
                   support@loanease.com
                 </p>
               </div>
@@ -354,66 +186,20 @@ export  function Footer({
       </div>
 
       {/* Divider */}
-      <div className="border-t border-primary-100 dark:border-primary-900">
-        <div
-          className="
-            mx-auto
-            flex
-            max-w-7xl
-            flex-col
-            gap-4
-            px-4
-            py-6
-            text-xs
-            text-foreground/45
-            2xs:px-5
-            sm:px-6
-            md:flex-row
-            md:items-center
-            md:justify-between
-            lg:px-8
-          "
-        >
-          <p>
-            © {currentYear} LoanEase. All rights reserved.
-          </p>
+      <div className="border-primary-100 dark:border-primary-900 border-t">
+        <div className="text-foreground/45 2xs:px-5 mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 text-xs sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+          <p>© {currentYear} LoanEase. All rights reserved.</p>
 
-          <div
-            className="
-              flex
-              flex-wrap
-              items-center
-              gap-x-5
-              gap-y-2
-            "
-          >
-            <button
-              type="button"
-              className="
-                transition
-                hover:text-primary-600
-              "
-            >
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <button type="button" className="hover:text-primary-600 transition">
               Privacy Policy
             </button>
 
-            <button
-              type="button"
-              className="
-                transition
-                hover:text-primary-600
-              "
-            >
+            <button type="button" className="hover:text-primary-600 transition">
               Terms & Conditions
             </button>
 
-            <button
-              type="button"
-              className="
-                transition
-                hover:text-primary-600
-              "
-            >
+            <button type="button" className="hover:text-primary-600 transition">
               Disclaimer
             </button>
           </div>
@@ -421,29 +207,8 @@ export  function Footer({
       </div>
 
       {/* Financial Disclaimer */}
-      <div
-        className="
-          border-t
-          border-primary-100
-          bg-primary-50/50
-          dark:border-primary-900
-          dark:bg-primary-950/20
-        "
-      >
-        <div
-          className="
-            mx-auto
-            max-w-7xl
-            px-4
-            py-4
-            text-[11px]
-            leading-5
-            text-foreground/40
-            2xs:px-5
-            sm:px-6
-            lg:px-8
-          "
-        >
+      <div className="border-primary-100 bg-primary-50/50 dark:border-primary-900 dark:bg-primary-950/20 border-t">
+        <div className="text-foreground/40 2xs:px-5 mx-auto max-w-7xl px-4 py-4 text-[11px] leading-5 sm:px-6 lg:px-8">
           Loan approval, interest rates and repayment terms are subject to
           eligibility, verification and applicable lending policies. Please
           review all terms carefully before accepting any loan offer.

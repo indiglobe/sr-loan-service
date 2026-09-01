@@ -89,20 +89,20 @@ export default function ContactUs() {
 
   return (
     <Main>
-      <div className="min-h-screen bg-background text-foreground">
+      <div className="bg-background text-foreground min-h-screen">
         {/* Hero */}
-        <section className="relative overflow-hidden border-b border-primary-100 dark:border-primary-900">
-          <div className="absolute -right-32 -top-32 size-80 rounded-full bg-primary-200/40 blur-3xl dark:bg-primary-900/20" />
+        <section className="border-primary-100 dark:border-primary-900 relative overflow-hidden border-b">
+          <div className="bg-primary-200/40 dark:bg-primary-900/20 absolute -top-32 -right-32 size-80 rounded-full blur-3xl" />
 
-          <div className="absolute -bottom-40 -left-32 size-80 rounded-full bg-secondary-200/30 blur-3xl dark:bg-secondary-900/20" />
+          <div className="bg-secondary-200/30 dark:bg-secondary-900/20 absolute -bottom-40 -left-32 size-80 rounded-full blur-3xl" />
 
-          <div className="relative mx-auto max-w-7xl px-4 py-16 text-center 2xs:px-5 sm:px-6 md:py-20 lg:px-8">
-            <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-2 text-xs font-semibold text-primary-700 dark:border-primary-800 dark:bg-primary-950 dark:text-primary-300">
-              <span className="size-2 rounded-full bg-accent-500" />
+          <div className="2xs:px-5 relative mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 md:py-20 lg:px-8">
+            <div className="border-primary-200 bg-primary-50 text-primary-700 dark:border-primary-800 dark:bg-primary-950 dark:text-primary-300 mx-auto mb-5 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-semibold">
+              <span className="bg-accent-500 size-2 rounded-full" />
               We're here to help
             </div>
 
-            <h1 className="mx-auto max-w-3xl font-brand-secondary text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="font-brand-secondary mx-auto max-w-3xl text-4xl leading-tight font-bold sm:text-5xl lg:text-6xl">
               Have questions?
               <span className="text-primary-600 dark:text-primary-400">
                 {" "}
@@ -110,7 +110,7 @@ export default function ContactUs() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-foreground/60 sm:text-lg">
+            <p className="text-foreground/60 mx-auto mt-5 max-w-2xl text-base leading-7 sm:text-lg">
               Whether you need help choosing a loan, understanding eligibility,
               or tracking your application, our team is ready to assist you.
             </p>
@@ -119,55 +119,26 @@ export default function ContactUs() {
 
         {/* Contact Cards */}
         <section className="py-12 sm:py-16">
-          <div className="mx-auto max-w-7xl px-4 2xs:px-5 sm:px-6 lg:px-8">
+          <div className="2xs:px-5 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {contactOptions.map((option) => (
                 <div
                   key={option.title}
-                  className="
-                    group
-                    rounded-3xl
-                    border
-                    border-primary-100
-                    bg-background
-                    p-6
-                    transition
-                    duration-300
-                    hover:-translate-y-1
-                    hover:border-primary-300
-                    hover:shadow-xl
-                    dark:border-primary-900
-                  "
+                  className="group border-primary-100 bg-background hover:border-primary-300 dark:border-primary-900 rounded-3xl border p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <div
-                    className="
-                      mb-5
-                      flex
-                      size-12
-                      items-center
-                      justify-center
-                      rounded-2xl
-                      bg-primary-100
-                      text-primary-700
-                      transition
-                      group-hover:bg-primary-600
-                      group-hover:text-white
-                      dark:bg-primary-900
-                      dark:text-primary-300
-                    "
-                  >
+                  <div className="bg-primary-100 text-primary-700 group-hover:bg-primary-600 dark:bg-primary-900 dark:text-primary-300 mb-5 flex size-12 items-center justify-center rounded-2xl transition group-hover:text-white">
                     {option.icon}
                   </div>
 
-                  <p className="text-sm font-medium text-foreground/50">
+                  <p className="text-foreground/50 text-sm font-medium">
                     {option.title}
                   </p>
 
-                  <h2 className="mt-1 font-brand-secondary text-lg font-bold">
+                  <h2 className="font-brand-secondary mt-1 text-lg font-bold">
                     {option.value}
                   </h2>
 
-                  <p className="mt-2 text-sm text-foreground/50">
+                  <p className="text-foreground/50 mt-2 text-sm">
                     {option.description}
                   </p>
                 </div>
@@ -178,30 +149,18 @@ export default function ContactUs() {
 
         {/* Contact Form Section */}
         <section className="pb-20">
-          <div
-            className="
-              mx-auto
-              grid
-              max-w-7xl
-              gap-10
-              px-4
-              2xs:px-5
-              sm:px-6
-              lg:grid-cols-[0.8fr_1.2fr]
-              lg:px-8
-            "
-          >
+          <div className="2xs:px-5 mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
             {/* Left Content */}
             <div className="lg:py-8">
-              <p className="text-sm font-bold uppercase tracking-widest text-primary-600">
+              <p className="text-primary-600 text-sm font-bold tracking-widest uppercase">
                 Contact our team
               </p>
 
-              <h2 className="mt-3 max-w-lg font-brand-secondary text-3xl font-bold leading-tight sm:text-4xl">
+              <h2 className="font-brand-secondary mt-3 max-w-lg text-3xl leading-tight font-bold sm:text-4xl">
                 Tell us how we can help.
               </h2>
 
-              <p className="mt-5 max-w-lg leading-7 text-foreground/55">
+              <p className="text-foreground/55 mt-5 max-w-lg leading-7">
                 Fill in the form and one of our loan specialists will get in
                 touch with you as soon as possible.
               </p>
@@ -209,7 +168,7 @@ export default function ContactUs() {
               {/* Small Info */}
               <div className="mt-8 space-y-5">
                 <div className="flex gap-4">
-                  <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary-100 font-bold text-secondary-800 dark:bg-secondary-900 dark:text-secondary-200">
+                  <div className="bg-secondary-100 text-secondary-800 dark:bg-secondary-900 dark:text-secondary-200 flex size-10 shrink-0 items-center justify-center rounded-xl font-bold">
                     ✓
                   </div>
 
@@ -218,14 +177,14 @@ export default function ContactUs() {
                       No obligation
                     </h3>
 
-                    <p className="mt-1 text-sm text-foreground/50">
+                    <p className="text-foreground/50 mt-1 text-sm">
                       Asking us a question won't start a loan application.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary-100 font-bold text-secondary-800 dark:bg-secondary-900 dark:text-secondary-200">
+                  <div className="bg-secondary-100 text-secondary-800 dark:bg-secondary-900 dark:text-secondary-200 flex size-10 shrink-0 items-center justify-center rounded-xl font-bold">
                     ✓
                   </div>
 
@@ -234,14 +193,14 @@ export default function ContactUs() {
                       Secure communication
                     </h3>
 
-                    <p className="mt-1 text-sm text-foreground/50">
+                    <p className="text-foreground/50 mt-1 text-sm">
                       Your personal information is handled securely.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary-100 font-bold text-secondary-800 dark:bg-secondary-900 dark:text-secondary-200">
+                  <div className="bg-secondary-100 text-secondary-800 dark:bg-secondary-900 dark:text-secondary-200 flex size-10 shrink-0 items-center justify-center rounded-xl font-bold">
                     ✓
                   </div>
 
@@ -250,7 +209,7 @@ export default function ContactUs() {
                       Dedicated assistance
                     </h3>
 
-                    <p className="mt-1 text-sm text-foreground/50">
+                    <p className="text-foreground/50 mt-1 text-sm">
                       Get help from our dedicated loan support team.
                     </p>
                   </div>
@@ -259,26 +218,13 @@ export default function ContactUs() {
             </div>
 
             {/* Form */}
-            <div
-              className="
-                rounded-[2rem]
-                border
-                border-primary-100
-                bg-background
-                p-5
-                shadow-xl
-                shadow-primary-950/5
-                dark:border-primary-900
-                2xs:p-6
-                sm:p-8
-              "
-            >
+            <div className="border-primary-100 bg-background shadow-primary-950/5 dark:border-primary-900 2xs:p-6 rounded-[2rem] border p-5 shadow-xl sm:p-8">
               <div className="mb-7">
                 <h2 className="font-brand-secondary text-2xl font-bold">
                   Send us a message
                 </h2>
 
-                <p className="mt-2 text-sm text-foreground/50">
+                <p className="text-foreground/50 mt-2 text-sm">
                   Enter your details below and we'll get back to you.
                 </p>
               </div>
@@ -302,24 +248,7 @@ export default function ContactUs() {
                       name="name"
                       type="text"
                       placeholder="Enter your name"
-                      className="
-                        w-full
-                        rounded-xl
-                        border
-                        border-primary-100
-                        bg-background
-                        px-4
-                        py-3
-                        text-sm
-                        outline-none
-                        transition
-                        placeholder:text-foreground/30
-                        focus:border-primary-500
-                        focus:ring-4
-                        focus:ring-primary-100
-                        dark:border-primary-900
-                        dark:focus:ring-primary-950
-                      "
+                      className="border-primary-100 bg-background placeholder:text-foreground/30 focus:border-primary-500 focus:ring-primary-100 dark:border-primary-900 dark:focus:ring-primary-950 w-full rounded-xl border px-4 py-3 text-sm transition outline-none focus:ring-4"
                     />
                   </div>
 
@@ -336,24 +265,7 @@ export default function ContactUs() {
                       name="email"
                       type="email"
                       placeholder="you@example.com"
-                      className="
-                        w-full
-                        rounded-xl
-                        border
-                        border-primary-100
-                        bg-background
-                        px-4
-                        py-3
-                        text-sm
-                        outline-none
-                        transition
-                        placeholder:text-foreground/30
-                        focus:border-primary-500
-                        focus:ring-4
-                        focus:ring-primary-100
-                        dark:border-primary-900
-                        dark:focus:ring-primary-950
-                      "
+                      className="border-primary-100 bg-background placeholder:text-foreground/30 focus:border-primary-500 focus:ring-primary-100 dark:border-primary-900 dark:focus:ring-primary-950 w-full rounded-xl border px-4 py-3 text-sm transition outline-none focus:ring-4"
                     />
                   </div>
                 </div>
@@ -372,24 +284,7 @@ export default function ContactUs() {
                     name="phone"
                     type="tel"
                     placeholder="+91 98765 43210"
-                    className="
-                      w-full
-                      rounded-xl
-                      border
-                      border-primary-100
-                      bg-background
-                      px-4
-                      py-3
-                      text-sm
-                      outline-none
-                      transition
-                      placeholder:text-foreground/30
-                      focus:border-primary-500
-                      focus:ring-4
-                      focus:ring-primary-100
-                      dark:border-primary-900
-                      dark:focus:ring-primary-950
-                    "
+                    className="border-primary-100 bg-background placeholder:text-foreground/30 focus:border-primary-500 focus:ring-primary-100 dark:border-primary-900 dark:focus:ring-primary-950 w-full rounded-xl border px-4 py-3 text-sm transition outline-none focus:ring-4"
                   />
                 </div>
 
@@ -406,51 +301,23 @@ export default function ContactUs() {
                     id="subject"
                     name="subject"
                     defaultValue=""
-                    className="
-                      w-full
-                      rounded-xl
-                      border
-                      border-primary-100
-                      bg-background
-                      px-4
-                      py-3
-                      text-sm
-                      outline-none
-                      transition
-                      focus:border-primary-500
-                      focus:ring-4
-                      focus:ring-primary-100
-                      dark:border-primary-900
-                      dark:focus:ring-primary-950
-                    "
+                    className="border-primary-100 bg-background focus:border-primary-500 focus:ring-primary-100 dark:border-primary-900 dark:focus:ring-primary-950 w-full rounded-xl border px-4 py-3 text-sm transition outline-none focus:ring-4"
                   >
                     <option value="" disabled>
                       Select a topic
                     </option>
 
-                    <option value="personal-loan">
-                      Personal Loan
-                    </option>
+                    <option value="personal-loan">Personal Loan</option>
 
-                    <option value="home-loan">
-                      Home Loan
-                    </option>
+                    <option value="home-loan">Home Loan</option>
 
-                    <option value="education-loan">
-                      Education Loan
-                    </option>
+                    <option value="education-loan">Education Loan</option>
 
-                    <option value="business-loan">
-                      Business Loan
-                    </option>
+                    <option value="business-loan">Business Loan</option>
 
-                    <option value="application">
-                      Existing Application
-                    </option>
+                    <option value="application">Existing Application</option>
 
-                    <option value="other">
-                      Other
-                    </option>
+                    <option value="other">Other</option>
                   </select>
                 </div>
 
@@ -468,46 +335,13 @@ export default function ContactUs() {
                     name="message"
                     rows={5}
                     placeholder="Tell us how we can help..."
-                    className="
-                      w-full
-                      resize-none
-                      rounded-xl
-                      border
-                      border-primary-100
-                      bg-background
-                      px-4
-                      py-3
-                      text-sm
-                      outline-none
-                      transition
-                      placeholder:text-foreground/30
-                      focus:border-primary-500
-                      focus:ring-4
-                      focus:ring-primary-100
-                      dark:border-primary-900
-                      dark:focus:ring-primary-950
-                    "
+                    className="border-primary-100 bg-background placeholder:text-foreground/30 focus:border-primary-500 focus:ring-primary-100 dark:border-primary-900 dark:focus:ring-primary-950 w-full resize-none rounded-xl border px-4 py-3 text-sm transition outline-none focus:ring-4"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="
-                    w-full
-                    rounded-xl
-                    bg-primary-600
-                    px-6
-                    py-3.5
-                    text-sm
-                    font-semibold
-                    text-white
-                    shadow-lg
-                    shadow-primary-600/20
-                    transition
-                    hover:bg-primary-700
-                    active:scale-[0.99]
-                    sm:w-auto
-                  "
+                  className="bg-primary-600 shadow-primary-600/20 hover:bg-primary-700 w-full rounded-xl px-6 py-3.5 text-sm font-semibold text-white shadow-lg transition active:scale-[0.99] sm:w-auto"
                 >
                   Send Message
                 </button>
@@ -517,53 +351,25 @@ export default function ContactUs() {
         </section>
 
         {/* Support CTA */}
-        <section className="px-4 pb-20 2xs:px-5 sm:px-6 lg:px-8">
-          <div
-            className="
-              mx-auto
-              flex
-              max-w-7xl
-              flex-col
-              gap-6
-              rounded-[2rem]
-              bg-primary-700
-              px-6
-              py-10
-              text-white
-              sm:px-8
-              md:flex-row
-              md:items-center
-              md:justify-between
-              lg:px-12
-            "
-          >
+        <section className="2xs:px-5 px-4 pb-20 sm:px-6 lg:px-8">
+          <div className="bg-primary-700 mx-auto flex max-w-7xl flex-col gap-6 rounded-[2rem] px-6 py-10 text-white sm:px-8 md:flex-row md:items-center md:justify-between lg:px-12">
             <div>
-              <p className="text-sm font-semibold text-primary-200">
+              <p className="text-primary-200 text-sm font-semibold">
                 Need urgent assistance?
               </p>
 
-              <h2 className="mt-2 font-brand-secondary text-2xl font-bold sm:text-3xl">
+              <h2 className="font-brand-secondary mt-2 text-2xl font-bold sm:text-3xl">
                 Speak directly with our support team.
               </h2>
 
-              <p className="mt-2 text-sm text-primary-100">
+              <p className="text-primary-100 mt-2 text-sm">
                 Our loan specialists are available during business hours.
               </p>
             </div>
 
             <button
               type="button"
-              className="
-                shrink-0
-                rounded-xl
-                bg-background
-                px-6
-                py-3
-                font-semibold
-                text-primary-700
-                transition
-                hover:scale-[1.02]
-              "
+              className="bg-background text-primary-700 shrink-0 rounded-xl px-6 py-3 font-semibold transition hover:scale-[1.02]"
             >
               Call Support
             </button>

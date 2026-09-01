@@ -1,130 +1,49 @@
 import { cn } from "@/lib/utils/cn";
 import { Link } from "@tanstack/react-router";
-import {
-  useState,
-  type ComponentProps,
-} from "react";
+import { useState } from "react";
+import type { ComponentProps } from "react";
 
-export default function Navbar({
-  className,
-  ...props
-}: ComponentProps<"nav">) {
+export default function Navbar({ className, ...props }: ComponentProps<"nav">) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav
       className={cn(
-        `
-        sticky top-0 z-50
-        w-full
-        border-b border-primary-100
-        bg-background/95
-        backdrop-blur-md
-        dark:border-primary-900
-        `,
-        className
+        `border-primary-100 bg-background/95 dark:border-primary-900 sticky top-0 z-50 w-full border-b backdrop-blur-md`,
+        className,
       )}
       {...props}
     >
-      <div
-        className="
-        mx-auto
-        flex
-        h-16
-        w-full
-        max-w-7xl
-        items-center
-        justify-between
-        px-4
-        2xs:px-5
-        sm:px-6
-        lg:px-8
-      "
-      >
+      <div className="2xs:px-5 mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link
           to="/"
           onClick={() => setIsOpen(false)}
-          className="
-            flex
-            items-center
-            gap-2.5
-          "
+          className="flex items-center gap-2.5"
         >
-          <div
-            className="
-              flex
-              size-10
-              items-center
-              justify-center
-              rounded-xl
-              bg-primary-600
-              font-brand-secondary
-              text-lg
-              font-bold
-              text-white
-              shadow-sm
-            "
-          >
+          <div className="bg-primary-600 font-brand-secondary flex size-10 items-center justify-center rounded-xl text-lg font-bold text-white shadow-sm">
             L
           </div>
 
           <div>
-            <h1
-              className="
-                font-brand-secondary
-                text-lg
-                font-bold
-                leading-none
-                text-primary-700
-                dark:text-primary-300
-                sm:text-xl
-              "
-            >
+            <h1 className="font-brand-secondary text-primary-700 dark:text-primary-300 text-lg leading-none font-bold sm:text-xl">
               LoanEase
             </h1>
 
-            <p
-              className="
-                mt-1
-                hidden
-                text-[10px]
-                font-medium
-                text-foreground/45
-                2xs:block
-              "
-            >
+            <p className="text-foreground/45 2xs:block mt-1 hidden text-[10px] font-medium">
               Finance made simple
             </p>
           </div>
         </Link>
 
         {/* Desktop Links */}
-        <div
-          className="
-            hidden
-            items-center
-            gap-2
-            md:flex
-          "
-        >
+        <div className="hidden items-center gap-2 md:flex">
           <Link
             to="/"
             activeOptions={{
               exact: true,
             }}
-            className="
-              rounded-xl
-              px-4
-              py-2
-              text-sm
-              font-semibold
-              text-foreground/60
-              transition-colors
-              hover:bg-primary-50
-              hover:text-primary-600
-              dark:hover:bg-primary-950
-            "
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-2 text-sm font-semibold transition-colors"
             activeProps={{
               className:
                 "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
@@ -135,18 +54,7 @@ export default function Navbar({
 
           <Link
             to="/contact-us"
-            className="
-              rounded-xl
-              px-4
-              py-2
-              text-sm
-              font-semibold
-              text-foreground/60
-              transition-colors
-              hover:bg-primary-50
-              hover:text-primary-600
-              dark:hover:bg-primary-950
-            "
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-2 text-sm font-semibold transition-colors"
             activeProps={{
               className:
                 "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
@@ -157,48 +65,17 @@ export default function Navbar({
         </div>
 
         {/* Desktop Right Side */}
-        <div
-          className="
-            hidden
-            items-center
-            gap-3
-            md:flex
-          "
-        >
+        <div className="hidden items-center gap-3 md:flex">
           <button
             type="button"
-            className="
-              rounded-xl
-              px-4
-              py-2.5
-              text-sm
-              font-semibold
-              text-primary-700
-              transition
-              hover:bg-primary-50
-              dark:text-primary-300
-              dark:hover:bg-primary-950
-            "
+            className="text-primary-700 hover:bg-primary-50 dark:text-primary-300 dark:hover:bg-primary-950 rounded-xl px-4 py-2.5 text-sm font-semibold transition"
           >
             Sign In
           </button>
 
           <button
             type="button"
-            className="
-              rounded-xl
-              bg-primary-600
-              px-5
-              py-2.5
-              text-sm
-              font-semibold
-              text-white
-              shadow-md
-              shadow-primary-600/15
-              transition
-              hover:bg-primary-700
-              active:scale-95
-            "
+            className="bg-primary-600 shadow-primary-600/15 hover:bg-primary-700 rounded-xl px-5 py-2.5 text-sm font-semibold text-white shadow-md transition active:scale-95"
           >
             Apply Now
           </button>
@@ -210,21 +87,7 @@ export default function Navbar({
           aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
           onClick={() => setIsOpen((prev) => !prev)}
-          className="
-            flex
-            size-10
-            items-center
-            justify-center
-            rounded-xl
-            border
-            border-primary-100
-            text-foreground
-            transition
-            hover:bg-primary-50
-            dark:border-primary-900
-            dark:hover:bg-primary-950
-            md:hidden
-          "
+          className="border-primary-100 text-foreground hover:bg-primary-50 dark:border-primary-900 dark:hover:bg-primary-950 flex size-10 items-center justify-center rounded-xl border transition md:hidden"
         >
           {isOpen ? (
             <svg
@@ -258,48 +121,20 @@ export default function Navbar({
       {/* Mobile Menu */}
       <div
         className={cn(
-          `
-          overflow-hidden
-          transition-all
-          duration-300
-          md:hidden
-          `,
+          `overflow-hidden transition-all duration-300 md:hidden`,
           isOpen
-            ? "max-h-96 border-t border-primary-100 opacity-100 dark:border-primary-900"
-            : "max-h-0 opacity-0"
+            ? "border-primary-100 dark:border-primary-900 max-h-96 border-t opacity-100"
+            : "max-h-0 opacity-0",
         )}
       >
-        <div
-          className="
-            mx-auto
-            flex
-            max-w-7xl
-            flex-col
-            gap-1
-            px-4
-            py-4
-            2xs:px-5
-            sm:px-6
-          "
-        >
+        <div className="2xs:px-5 mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
           <Link
             to="/"
             activeOptions={{
               exact: true,
             }}
             onClick={() => setIsOpen(false)}
-            className="
-              rounded-xl
-              px-4
-              py-3
-              text-sm
-              font-semibold
-              text-foreground/60
-              transition
-              hover:bg-primary-50
-              hover:text-primary-600
-              dark:hover:bg-primary-950
-            "
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-3 text-sm font-semibold transition"
             activeProps={{
               className:
                 "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
@@ -311,18 +146,7 @@ export default function Navbar({
           <Link
             to="/contact-us"
             onClick={() => setIsOpen(false)}
-            className="
-              rounded-xl
-              px-4
-              py-3
-              text-sm
-              font-semibold
-              text-foreground/60
-              transition
-              hover:bg-primary-50
-              hover:text-primary-600
-              dark:hover:bg-primary-950
-            "
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-3 text-sm font-semibold transition"
             activeProps={{
               className:
                 "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
@@ -331,42 +155,18 @@ export default function Navbar({
             Contact Us
           </Link>
 
-          <div className="my-2 h-px bg-primary-100 dark:bg-primary-900" />
+          <div className="bg-primary-100 dark:bg-primary-900 my-2 h-px" />
 
           <button
             type="button"
-            className="
-              rounded-xl
-              px-4
-              py-3
-              text-left
-              text-sm
-              font-semibold
-              text-primary-700
-              transition
-              hover:bg-primary-50
-              dark:text-primary-300
-              dark:hover:bg-primary-950
-            "
+            className="text-primary-700 hover:bg-primary-50 dark:text-primary-300 dark:hover:bg-primary-950 rounded-xl px-4 py-3 text-left text-sm font-semibold transition"
           >
             Sign In
           </button>
 
           <button
             type="button"
-            className="
-              mt-1
-              w-full
-              rounded-xl
-              bg-primary-600
-              px-5
-              py-3
-              text-sm
-              font-semibold
-              text-white
-              transition
-              hover:bg-primary-700
-            "
+            className="bg-primary-600 hover:bg-primary-700 mt-1 w-full rounded-xl px-5 py-3 text-sm font-semibold text-white transition"
           >
             Apply Now
           </button>

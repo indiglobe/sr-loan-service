@@ -1,6 +1,6 @@
 import Navbar from "@/components/header/navbar";
 
-export  function Header() {
+export function Header() {
   return (
     <header>
       <Navbar />
