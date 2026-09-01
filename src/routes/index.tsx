@@ -1,16 +1,39 @@
-
 import Main from "@/components/main/main";
 import { createFileRoute } from "@tanstack/react-router";
+import { Home } from "@/components/main/home/home";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
 
-  head: () => ({ meta: [{ title: "Scrapnity | Home" }] }),
+  head: () => {
+    const title = "SR Loan Service | Simple & Flexible Loan Solutions";
+    const description = "SR Loan Service | Simple & Flexible Loan Solutions";
+    return {
+      meta: [
+        { title: title },
+        {
+          name: "description",
+          content: description,
+        },
+        {
+          property: "og:title",
+          content: title,
+        },
+        {
+          property: "og:description",
+          content: description,
+        },
+        { property: "og:image", content: "/logo512.png" },
+        // { property: "og:url", content: "https://yourdomain.com/" },
+      ],
+    };
+  },
 });
 
 function RouteComponent() {
   return (
     <Main>
+      <Home />
     </Main>
   );
 }
