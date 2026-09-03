@@ -9,6 +9,7 @@ import type { QueryClient } from "@tanstack/react-query";
 import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/footer";
 import { NotFound } from "@/components/main/not-found";
+import { cn } from "@/lib/utils/cn";
 
 interface MyRouterContext {
   queryClient: QueryClient;
@@ -35,7 +36,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       },
       {
         rel: "icon",
-        href: '/favicon.ico',
+        href: "/favicon.ico",
       },
     ],
   }),
@@ -46,11 +47,15 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn(`dark`)} >
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body
+        className={cn(
+          `bg-background text-foreground flex min-h-svh flex-col`,
+        )}
+      >
         <Header />
         {children}
         <Footer />

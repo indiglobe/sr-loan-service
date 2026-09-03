@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils/cn";
+import { LogoIcon, LogoText } from "@/ui/logo";
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import type { ComponentProps } from "react";
@@ -19,21 +20,10 @@ export default function Navbar({ className, ...props }: ComponentProps<"nav">) {
         <Link
           to="/"
           onClick={() => setIsOpen(false)}
-          className="flex items-center gap-2.5"
+          className="flex items-center"
         >
-          <div className="bg-primary-600 font-brand-secondary flex size-10 items-center justify-center rounded-xl text-lg font-bold text-white shadow-sm">
-            L
-          </div>
-
-          <div>
-            <h1 className="font-brand-secondary text-primary-700 dark:text-primary-300 text-lg leading-none font-bold sm:text-xl">
-              LoanEase
-            </h1>
-
-            <p className="text-foreground/45 2xs:block mt-1 hidden text-[10px] font-medium">
-              Finance made simple
-            </p>
-          </div>
+          <LogoIcon className={cn(`h-12 w-12`)} />
+          <LogoText className={cn(`h-12 w-48 max-xs:hidden xs:block md:hidden xl:block`)} />
         </Link>
 
         {/* Desktop Links */}
@@ -50,6 +40,28 @@ export default function Navbar({ className, ...props }: ComponentProps<"nav">) {
             }}
           >
             Home
+          </Link>
+
+          <Link
+            to="/our-product"
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-2 text-sm font-semibold transition-colors"
+            activeProps={{
+              className:
+                "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
+            }}
+          >
+            Our Product
+          </Link>
+
+          <Link
+            to="/loans"
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-2 text-sm font-semibold transition-colors"
+            activeProps={{
+              className:
+                "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
+            }}
+          >
+            Loans
           </Link>
 
           <Link
@@ -141,6 +153,30 @@ export default function Navbar({ className, ...props }: ComponentProps<"nav">) {
             }}
           >
             Home
+          </Link>
+
+          <Link
+            to="/loans"
+            onClick={() => setIsOpen(false)}
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-3 text-sm font-semibold transition"
+            activeProps={{
+              className:
+                "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
+            }}
+          >
+            Loans
+          </Link>
+
+          <Link
+            to="/our-product"
+            onClick={() => setIsOpen(false)}
+            className="text-foreground/60 hover:bg-primary-50 hover:text-primary-600 dark:hover:bg-primary-950 rounded-xl px-4 py-3 text-sm font-semibold transition"
+            activeProps={{
+              className:
+                "bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300",
+            }}
+          >
+            Our Product
           </Link>
 
           <Link
