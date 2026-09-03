@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils/cn";
+import { LogoIcon, LogoText } from "@/ui/logo";
 import { Link } from "@tanstack/react-router";
 import type { ComponentProps } from "react";
 
@@ -17,20 +18,12 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
       <div className="2xs:px-5 mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8 lg:py-16">
         {/* Brand */}
         <div className="md:col-span-2 lg:col-span-1">
-          <Link to="/" className="inline-flex items-center gap-3">
-            <div className="bg-primary-600 font-brand-secondary flex size-10 items-center justify-center rounded-xl text-lg font-bold text-white shadow-sm">
-              L
-            </div>
-
-            <div>
-              <h2 className="font-brand-secondary text-primary-700 dark:text-primary-300 text-xl leading-none font-bold">
-                LoanEase
-              </h2>
-
-              <p className="text-foreground/45 mt-1 text-[10px] font-medium">
-                Finance made simple
-              </p>
-            </div>
+          <Link
+            to="/"
+            className="flex items-center"
+          >
+            <LogoIcon className={cn(`h-12 w-12`)} />
+            <LogoText className={cn(`h-12 w-48`)} />
           </Link>
 
           <p className="text-foreground/55 mt-5 max-w-sm text-sm leading-6">
@@ -177,7 +170,7 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
                 <p className="text-foreground/40 text-xs">Email us</p>
 
                 <p className="mt-0.5 text-sm font-semibold break-all">
-                  support@loanease.com
+                  support@srloanservice.com
                 </p>
               </div>
             </div>
@@ -188,7 +181,7 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
       {/* Divider */}
       <div className="border-primary-100 dark:border-primary-900 border-t">
         <div className="text-foreground/45 2xs:px-5 mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 text-xs sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
-          <p>© {currentYear} LoanEase. All rights reserved.</p>
+          <p>© {currentYear} SR Loan Service. All rights reserved.</p>
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <button type="button" className="hover:text-primary-600 transition">

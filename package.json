@@ -9,7 +9,7 @@
     "test": "vitest run",
     "lint": "eslint",
     "format": "prettier --write . && eslint --fix",
-    "sb:dev": "storybook dev -p 6006 --no-open",
+    "sb:dev": "storybook dev -p 17730 --no-open",
     "sb:build": "storybook build",
     "lint:staged": "lint-staged",
     "check": "prettier --check ."
