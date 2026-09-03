@@ -32,7 +32,7 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
           </p>
 
           {/* Trust */}
-          <div className="bg-secondary-50 text-secondary-800 dark:bg-secondary-950 dark:text-secondary-200 mt-5 inline-flex items-center gap-2 rounded-xl px-3 py-2 text-xs font-semibold">
+          <div className="bg-secondary-800 text-white dark:bg-green-800 dark:text-white mt-5 inline-flex items-center gap-2 rounded-xl px-3 py-2 text-xs font-semibold">
             <svg
               viewBox="0 0 24 24"
               fill="none"
