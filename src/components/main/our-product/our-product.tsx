@@ -1,16 +1,14 @@
 import {
   ArrowRight,
-  BadgeIndianRupee,
   BarChart3,
-  BriefcaseBusiness,
   Calculator,
   Check,
   ChevronRight,
+  CreditCard,
   FileCheck2,
-  GraduationCap,
   HandCoins,
-  House,
   Landmark,
+  ReceiptIndianRupee,
   RefreshCw,
   ShieldCheck,
   Sparkles,
@@ -26,40 +24,55 @@ import { cn } from "@/lib/utils/cn";
 
 const products = [
   {
-    icon: BadgeIndianRupee,
-    title: "Personal Loan",
+    icon: Landmark,
+    title: "Bank Account",
     description:
-      "Flexible funding for travel, medical expenses, weddings and everyday financial needs.",
-    amount: "Up to ₹20L",
-    tenure: "Up to 60 months",
-    tag: "Popular",
+      "Open and manage suitable banking accounts with simple guidance and assistance.",
+    features: [
+      "Savings & current account options",
+      "Simple onboarding support",
+      "Banking guidance",
+    ],
   },
   {
-    icon: House,
-    title: "Home Loan",
+    icon: BarChart3,
+    title: "Demat Account",
     description:
-      "Long-term financing support for purchasing, building or improving your home.",
-    amount: "Up to ₹2Cr",
-    tenure: "Up to 30 years",
-    tag: "Long Term",
+      "Start your investment journey with a Demat account for holding and managing securities digitally.",
+    features: [
+      "Digital investment access",
+      "Portfolio-ready setup",
+      "Easy account assistance",
+    ],
   },
   {
-    icon: GraduationCap,
-    title: "Education Loan",
+    icon: CreditCard,
+    title: "Credit Cards",
     description:
-      "Support for higher education in India or abroad with flexible repayment options.",
-    amount: "Up to ₹50L",
-    tenure: "Up to 15 years",
-    tag: "Education",
+      "Explore credit card options based on your spending needs, lifestyle and eligibility.",
+    features: [
+      "Multiple card options",
+      "Rewards & benefits",
+      "Application assistance",
+    ],
   },
   {
-    icon: BriefcaseBusiness,
-    title: "Business Loan",
+    icon: ShieldCheck,
+    title: "Insurance",
     description:
-      "Capital for business expansion, inventory, operations and new opportunities.",
-    amount: "Up to ₹50L",
-    tenure: "Up to 84 months",
-    tag: "Business",
+      "Explore insurance solutions designed to protect your health, family, vehicle and financial future.",
+    features: ["Health insurance", "Life insurance", "General insurance"],
+  },
+  {
+    icon: ReceiptIndianRupee,
+    title: "Taxations",
+    description:
+      "Get assistance with taxation-related services, filing requirements and financial documentation.",
+    features: [
+      "Tax filing assistance",
+      "Documentation support",
+      "Basic tax guidance",
+    ],
   },
 ];
 
@@ -140,15 +153,9 @@ export default function OurProduct() {
 /*                                PRODUCT HERO                                */
 /* -------------------------------------------------------------------------- */
 
-function ProductHero({
-  className,
-  ...props
-}: ComponentProps<"section">) {
+function ProductHero({ className, ...props }: ComponentProps<"section">) {
   return (
-    <section
-      className={cn("relative overflow-hidden", className)}
-      {...props}
-    >
+    <section className={cn("relative overflow-hidden", className)} {...props}>
       <div className="bg-primary-200/40 dark:bg-primary-900/20 absolute top-0 right-0 -z-10 size-96 rounded-full blur-3xl" />
 
       <div className="bg-secondary-200/25 dark:bg-secondary-900/15 absolute bottom-0 left-0 -z-10 size-80 rounded-full blur-3xl" />
@@ -159,7 +166,6 @@ function ProductHero({
           <div>
             <div className="border-primary-200 bg-primary-50 text-primary-700 dark:border-primary-800 dark:bg-primary-950 dark:text-primary-300 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-bold">
               <Sparkles className="size-3.5" />
-
               SR Loan Services Products
             </div>
 
@@ -182,7 +188,6 @@ function ProductHero({
                 className="group bg-primary-600 hover:bg-primary-700 shadow-primary-600/20 flex items-center justify-center gap-2 rounded-2xl px-7 py-3.5 text-sm font-bold text-white shadow-lg transition"
               >
                 Explore Products
-
                 <ArrowRight className="size-4 transition group-hover:translate-x-1" />
               </button>
 
@@ -232,7 +237,7 @@ function ProductHero({
                       </p>
 
                       <p className="text-foreground/45 mt-0.5 text-xs">
-                        {product.amount}
+                        {product.features[0]}
                       </p>
                     </div>
 
@@ -252,15 +257,9 @@ function ProductHero({
 /*                             PRODUCT SHOWCASE                               */
 /* -------------------------------------------------------------------------- */
 
-function ProductShowcase({
-  className,
-  ...props
-}: ComponentProps<"section">) {
+function ProductShowcase({ className, ...props }: ComponentProps<"section">) {
   return (
-    <section
-      className={cn("py-20 sm:py-24", className)}
-      {...props}
-    >
+    <section className={cn("py-20 sm:py-24", className)} {...props}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
           {/* Left Title */}
@@ -285,11 +284,7 @@ function ProductShowcase({
           {/* Right Product List */}
           <div className="space-y-5">
             {products.map((product, index) => (
-              <ProductPanel
-                key={product.title}
-                {...product}
-                index={index}
-              />
+              <ProductPanel key={product.title} {...product} index={index} />
             ))}
           </div>
         </div>
@@ -302,17 +297,13 @@ function ProductPanel({
   icon: Icon,
   title,
   description,
-  amount,
-  tenure,
-  tag,
+  features,
   index,
 }: {
   icon: ElementType;
   title: string;
   description: string;
-  amount: string;
-  tenure: string;
-  tag: string;
+  features: string[];
   index: number;
 }) {
   return (
@@ -340,25 +331,26 @@ function ProductPanel({
               {title}
             </h3>
 
-            <span className="bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300 rounded-full px-2.5 py-1 text-[10px] font-bold">
-              {tag}
-            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="font-brand-secondary text-xl font-bold sm:text-2xl">
+                {title}
+              </h3>
+            </div>
           </div>
 
           <p className="text-foreground/55 mt-2 max-w-xl text-sm leading-6">
             {description}
           </p>
 
-          <div className="mt-4 flex flex-wrap gap-5">
-            <ProductDetail
-              label="Loan Amount"
-              value={amount}
-            />
-
-            <ProductDetail
-              label="Tenure"
-              value={tenure}
-            />
+          <div className="mt-4 flex flex-wrap gap-2">
+            {features.map((feature) => (
+              <span
+                key={feature}
+                className="bg-primary-50 text-primary-700 dark:bg-primary-950 dark:text-primary-300 rounded-full px-3 py-1.5 text-xs font-semibold"
+              >
+                {feature}
+              </span>
+            ))}
           </div>
         </div>
 
@@ -377,10 +369,7 @@ function ProductPanel({
 /*                                BENEFIT STRIP                               */
 /* -------------------------------------------------------------------------- */
 
-function BenefitStrip({
-  className,
-  ...props
-}: ComponentProps<"section">) {
+function BenefitStrip({ className, ...props }: ComponentProps<"section">) {
   return (
     <section
       className={cn(
@@ -391,10 +380,7 @@ function BenefitStrip({
     >
       <div className="mx-auto grid max-w-7xl gap-px px-4 py-8 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
         {benefits.map((benefit) => (
-          <BenefitItem
-            key={benefit.title}
-            {...benefit}
-          />
+          <BenefitItem key={benefit.title} {...benefit} />
         ))}
       </div>
     </section>
@@ -416,13 +402,9 @@ function BenefitItem({
         <Icon className="size-4.5" />
       </div>
 
-      <h3 className="font-brand-secondary mt-4 font-bold">
-        {title}
-      </h3>
+      <h3 className="font-brand-secondary mt-4 font-bold">{title}</h3>
 
-      <p className="text-foreground/50 mt-2 text-sm leading-6">
-        {description}
-      </p>
+      <p className="text-foreground/50 mt-2 text-sm leading-6">{description}</p>
     </div>
   );
 }
@@ -431,15 +413,9 @@ function BenefitItem({
 /*                            PRODUCT COMPARISON                              */
 /* -------------------------------------------------------------------------- */
 
-function ProductComparison({
-  className,
-  ...props
-}: ComponentProps<"section">) {
+function ProductComparison({ className, ...props }: ComponentProps<"section">) {
   return (
-    <section
-      className={cn("py-20 sm:py-24", className)}
-      {...props}
-    >
+    <section className={cn("py-20 sm:py-24", className)} {...props}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           label="Compare Products"
@@ -466,10 +442,7 @@ function ProductComparison({
                 key={row.label}
                 className="border-primary-100 dark:border-primary-900 grid grid-cols-5 border-t"
               >
-                <ComparisonCell
-                  value={row.label}
-                  strong
-                />
+                <ComparisonCell value={row.label} strong />
 
                 <ComparisonCell value={row.personal} />
 
@@ -491,10 +464,7 @@ function ProductComparison({
 /*                            PRODUCT EXPERIENCE                              */
 /* -------------------------------------------------------------------------- */
 
-function ProductExperience({
-  className,
-  ...props
-}: ComponentProps<"section">) {
+function ProductExperience({ className, ...props }: ComponentProps<"section">) {
   return (
     <section
       className={cn(
@@ -505,7 +475,7 @@ function ProductExperience({
     >
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         {/* Left Card */}
-        <div className="bg-primary-800 relative overflow-hidden rounded-4xl p-7 text-primary-50 sm:p-10">
+        <div className="bg-primary-800 text-primary-50 relative overflow-hidden rounded-4xl p-7 sm:p-10">
           <div className="bg-secondary-400/20 absolute -top-20 -right-20 size-64 rounded-full blur-3xl" />
 
           <div className="relative">
@@ -527,20 +497,12 @@ function ProductExperience({
                 "Documentation assistance",
                 "Application support",
               ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-3"
-                >
+                <div key={item} className="flex items-center gap-3">
                   <div className="bg-secondary-400 text-secondary-950 grid size-6 place-items-center rounded-full">
-                    <Check
-                      className="size-3.5"
-                      strokeWidth={3}
-                    />
+                    <Check className="size-3.5" strokeWidth={3} />
                   </div>
 
-                  <span className="text-sm font-semibold">
-                    {item}
-                  </span>
+                  <span className="text-sm font-semibold">{item}</span>
                 </div>
               ))}
             </div>
@@ -582,18 +544,9 @@ function ProductExperience({
 /*                                  CTA                                       */
 /* -------------------------------------------------------------------------- */
 
-function ProductCTA({
-  className,
-  ...props
-}: ComponentProps<"section">) {
+function ProductCTA({ className, ...props }: ComponentProps<"section">) {
   return (
-    <section
-      className={cn(
-        "px-4 py-20 sm:px-6 lg:px-8",
-        className,
-      )}
-      {...props}
-    >
+    <section className={cn("px-4 py-20 sm:px-6 lg:px-8", className)} {...props}>
       <div className="border-primary-200 dark:border-primary-800 mx-auto grid max-w-7xl overflow-hidden rounded-4xl border lg:grid-cols-[1.2fr_.8fr]">
         <div className="bg-background p-7 sm:p-10 lg:p-12">
           <p className="text-primary-600 text-xs font-bold tracking-[0.2em] uppercase">
@@ -614,12 +567,11 @@ function ProductCTA({
             className="group bg-primary-600 hover:bg-primary-700 mt-8 flex items-center gap-2 rounded-2xl px-7 py-3.5 text-sm font-bold text-white transition"
           >
             Find My Loan
-
             <ArrowRight className="size-4 transition group-hover:translate-x-1" />
           </button>
         </div>
 
-        <div className="bg-primary-700 flex flex-col justify-center p-7 text-primary-50 sm:p-10 lg:p-12">
+        <div className="bg-primary-700 text-primary-50 flex flex-col justify-center p-7 sm:p-10 lg:p-12">
           <div className="bg-primary-600/70 grid size-12 place-items-center rounded-2xl">
             <Zap className="size-5" />
           </div>
@@ -638,7 +590,6 @@ function ProductCTA({
             className="border-primary-500/40 hover:bg-primary-600 mt-6 flex w-fit items-center gap-2 rounded-xl border px-5 py-3 text-sm font-bold transition"
           >
             Contact Us
-
             <ChevronRight className="size-4" />
           </button>
         </div>
@@ -676,37 +627,10 @@ function SectionHeader({
     </div>
   );
 }
-
-function ProductDetail({
-  label,
-  value,
-}: {
-  label: string;
-  value: string;
-}) {
-  return (
-    <div>
-      <p className="text-foreground/40 text-[10px] font-bold tracking-wider uppercase">
-        {label}
-      </p>
-
-      <p className="font-brand-secondary mt-1 text-sm font-bold">
-        {value}
-      </p>
-    </div>
-  );
-}
-
-function ComparisonHeader({
-  title,
-}: {
-  title: string;
-}) {
+function ComparisonHeader({ title }: { title: string }) {
   return (
     <div className="border-primary-100 dark:border-primary-900 border-r p-4 last:border-r-0">
-      <p className="font-brand-secondary text-sm font-bold">
-        {title}
-      </p>
+      <p className="font-brand-secondary text-sm font-bold">{title}</p>
     </div>
   );
 }
@@ -723,9 +647,7 @@ function ComparisonCell({
       <p
         className={cn(
           "text-sm",
-          strong
-            ? "font-brand-secondary font-bold"
-            : "text-foreground/55",
+          strong ? "font-brand-secondary font-bold" : "text-foreground/55",
         )}
       >
         {value}
@@ -750,9 +672,7 @@ function ExperienceRow({
       </div>
 
       <div>
-        <h3 className="font-brand-secondary font-bold">
-          {title}
-        </h3>
+        <h3 className="font-brand-secondary font-bold">{title}</h3>
 
         <p className="text-foreground/50 mt-1 text-sm leading-6">
           {description}

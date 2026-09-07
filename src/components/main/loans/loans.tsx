@@ -3,6 +3,7 @@ import {
   BadgeIndianRupee,
   Banknote,
   BriefcaseBusiness,
+  Building2,
   Calculator,
   CarFront,
   Check,
@@ -80,6 +81,13 @@ const loanProducts = [
       "Quick financing for urgent requirements with a fast and simplified application experience.",
     amount: "₹10K - ₹5L",
     tenure: "3 - 36 Months",
+  },
+  {
+    icon: Building2,
+    title: "Loan Against Property",
+    description: "Unlock funds by leveraging your property as collateral while continuing to retain ownership.",
+    amount: "₹5L - ₹5Cr",
+    tenure: "Up to 15 Years",
   },
 ];
 
