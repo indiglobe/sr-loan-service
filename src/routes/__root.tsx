@@ -26,7 +26,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Scrapnity",
+        title: "SR Loan Service",
       },
     ],
     links: [
@@ -59,8 +59,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <Header />
         {children}
         <Footer />
-        <DevTool />
         <Scripts />
+        <DevTool />
       </body>
     </html>
   );
