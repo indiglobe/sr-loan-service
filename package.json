@@ -72,7 +72,6 @@
   },
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.15.9",
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "pnpm format"
