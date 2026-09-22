@@ -1,3 +1,4 @@
+import Main from "@/components/main/main";
 import OurProduct from "@/components/main/our-product/our-product";
 import { createFileRoute } from "@tanstack/react-router";
 
@@ -6,5 +7,9 @@ export const Route = createFileRoute("/our-product/")({
 });
 
 function RouteComponent() {
-  return <><OurProduct/></>;
+  return (
+    <Main>
+      <OurProduct />
+    </Main>
+  );
 }

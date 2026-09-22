@@ -7,7 +7,7 @@ export default function Main({
   ...props
 }: ComponentProps<"main">) {
   return (
-    <main className={cn("grow")} {...props}>
+    <main className={cn("grow",className)} {...props}>
       {children}
     </main>
   );
