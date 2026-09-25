@@ -34,7 +34,7 @@ export interface BankLoanData {
   applyLink: string;
 }
 
-export const banksLoanData: BankLoanData[] = [
+export const banksInstantLoanData: BankLoanData[] = [
   {
     id: "poonawalla-fincorp",
     bankName: "Poonawalla Fincorp",
@@ -46,7 +46,7 @@ export const banksLoanData: BankLoanData[] = [
     maxTenure: "",
     processingTime: "Quick Disbursement",
     contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "",
+    applyLink: "https://wee.bnking.in/c/ZTEzOWFlY",
     benefits: [
       {
         id: "b1",
@@ -1445,11 +1445,11 @@ export const banksLoanData: BankLoanData[] = [
     ],
   },
   {
-    id: "ring-personal-loan",
+    id: "ring-instant-loan",
     bankName: "Ring",
     logoBg: "from-blue-700 to-indigo-900",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -1460,7 +1460,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -1484,7 +1484,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹5 Lakhs",
-        description: "Get personal loan amounts of up to ₹5 Lakhs.",
+        description: "Get instant loan amounts of up to ₹5 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -1617,7 +1617,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Navi",
     logoBg: "from-green-500 to-purple-900",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹10 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -1628,7 +1628,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -1652,7 +1652,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹10 Lakhs",
-        description: "Get personal loan amounts of up to ₹10 Lakhs.",
+        description: "Get instant loan amounts of up to ₹10 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -1701,7 +1701,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Moneycontrol",
     logoBg: "from-green-600 to-blue-700",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -1712,7 +1712,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -1736,7 +1736,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹2 Lakhs",
-        description: "Get personal loan amounts of up to ₹2 Lakhs.",
+        description: "Get instant loan amounts of up to ₹2 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -1785,7 +1785,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Loan 122",
     logoBg: "from-blue-700 to-blue-900",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -1796,7 +1796,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -1820,7 +1820,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹2 Lakhs",
-        description: "Get personal loan amounts of up to ₹2 Lakhs.",
+        description: "Get instant loan amounts of up to ₹2 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -1869,7 +1869,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Navi",
     logoBg: "from-black to-slate-900",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹10 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -1880,7 +1880,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -1904,7 +1904,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹10 Lakhs",
-        description: "Get personal loan amounts of up to ₹10 Lakhs.",
+        description: "Get instant loan amounts of up to ₹10 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -1953,7 +1953,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Insta Mudra",
     logoBg: "from-purple-700 to-rose-600",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹3 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -1964,7 +1964,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -1988,7 +1988,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹3 Lakhs",
-        description: "Get personal loan amounts of up to ₹3 Lakhs.",
+        description: "Get instant loan amounts of up to ₹3 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -2037,7 +2037,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "I2I Funding",
     logoBg: "from-orange-500 via-blue-900 to-green-600",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹3 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -2048,7 +2048,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -2072,7 +2072,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹3 Lakhs",
-        description: "Get personal loan amounts of up to ₹3 Lakhs.",
+        description: "Get instant loan amounts of up to ₹3 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -2205,7 +2205,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Chintamani Finlease",
     logoBg: "from-red-700 to-blue-800",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -2216,7 +2216,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -2240,7 +2240,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹2 Lakhs",
-        description: "Get personal loan amounts of up to ₹2 Lakhs.",
+        description: "Get instant loan amounts of up to ₹2 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -2289,7 +2289,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "CASHe",
     logoBg: "from-stone-500 to-orange-500",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -2300,7 +2300,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -2324,7 +2324,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹5 Lakhs",
-        description: "Get personal loan amounts of up to ₹5 Lakhs.",
+        description: "Get instant loan amounts of up to ₹5 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -2373,7 +2373,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Branch",
     logoBg: "from-sky-500 to-blue-900",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -2384,7 +2384,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -2408,7 +2408,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹5 Lakhs",
-        description: "Get personal loan amounts of up to ₹5 Lakhs.",
+        description: "Get instant loan amounts of up to ₹5 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
@@ -2457,7 +2457,7 @@ export const banksLoanData: BankLoanData[] = [
     bankName: "Bharat Loan",
     logoBg: "from-blue-600 to-rose-500",
     tagline: "Instant Loan (without Income Proof)",
-    productName: "Personal Loan",
+    productName: "instant Loan",
     roiStarting: "17.50% p.a.",
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
@@ -2468,7 +2468,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b1",
         title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
+        description: "Complete the instant loan process digitally.",
         iconName: "ShieldCheck",
       },
       {
@@ -2492,7 +2492,7 @@ export const banksLoanData: BankLoanData[] = [
       {
         id: "b5",
         title: "Loan Amount up to ₹5 Lakhs",
-        description: "Get personal loan amounts of up to ₹5 Lakhs.",
+        description: "Get instant loan amounts of up to ₹5 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
