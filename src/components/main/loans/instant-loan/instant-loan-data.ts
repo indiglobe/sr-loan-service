@@ -115,6 +115,258 @@ export const banksInstantLoanData: BankLoanData[] = [
     ],
   },
   {
+    id: "hero-fincorp",
+    bankName: "Hero Fincorp",
+    logoBg: "from-green-500 to-green-900",
+    tagline: "Instant Loan (without Income Proof)",
+    productName: "Instant Loan",
+    roiStarting: "18.99% p.a.",
+    maxAmount: "₹3 Lakhs",
+    maxTenure: "Up to 60 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/MzcwZmRjN",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the instant loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Eligible loans can be disbursed on the same day.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Hussle Free Services",
+        description: "Hussle free services are available with the loan.",
+        iconName: "BadgeCheck",
+      },
+      {
+        id: "b4",
+        title: "Up to 60 Months Tenure",
+        description: "Flexible loan tenure of up to 60 months is available.",
+        iconName: "CalendarDays",
+      },
+      {
+        id: "b5",
+        title: "Loan Amount up to ₹3 Lakhs",
+        description: "Get instant loan amounts of up to ₹3 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Vintage",
+        detail: "Minimum 2 years vintage required",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 23 to 65 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 725+ and above required",
+      },
+      {
+        id: "e4",
+        requirement: "USL Track",
+        detail: "Customer should have at least one USL track",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+    ],
+  },
+  {
+    id: "bajaj-finance",
+    bankName: "Bajaj Finance",
+    logoBg: "from-blue-600 to-blue-900",
+    tagline: "Instant Loan",
+    productName: "Instant Loan",
+    roiStarting: "17.50% p.a.",
+    maxAmount: "₹50 Lakhs",
+    maxTenure: "Up to 60 Months",
+    processingTime: "",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/MWNkOTA1Y",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the instant loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Hussle Free Services",
+        description: "Hussle free services are available with the loan.",
+        iconName: "BadgeCheck",
+      },
+      {
+        id: "b3",
+        title: "Can Login All Location Files",
+        description: "Loan files can be logged in from all locations.",
+        iconName: "MapPin",
+      },
+      {
+        id: "b4",
+        title: "Up to 60 Months Tenure",
+        description: "Loan tenure is available for up to 60 months.",
+        iconName: "CalendarDays",
+      },
+      {
+        id: "b5",
+        title: "Loan Amount up to ₹50 Lakhs",
+        description: "Get instant loan amounts of up to ₹50 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Vintage",
+        detail: "Minimum 2 years vintage required",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 23 to 65 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 710+ and above required",
+      },
+      {
+        id: "e4",
+        requirement: "USL Track",
+        detail: "Customer should have at least one USL track",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+    ],
+  },
+  {
+    id: "indusind-bank",
+    bankName: "IndusInd Bank",
+    logoBg: "from-red-700 to-red-900",
+    tagline: "Instant Loan (without Income Proof)",
+    productName: "Instant Loan",
+    roiStarting: "17.50% p.a.",
+    maxAmount: "₹5 Lakhs",
+    maxTenure: "Up to 60 Months",
+    processingTime: "",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/Zjg0ZmE1M",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the instant loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Hussle Free Services",
+        description: "Hussle free services are available with the loan.",
+        iconName: "BadgeCheck",
+      },
+      {
+        id: "b3",
+        title: "Can Login All Location Files",
+        description: "Loan files can be logged in from all locations.",
+        iconName: "MapPin",
+      },
+      {
+        id: "b4",
+        title: "Up to 60 Months Tenure",
+        description: "Loan tenure is available for up to 60 months.",
+        iconName: "CalendarDays",
+      },
+      {
+        id: "b5",
+        title: "Loan Amount up to ₹5 Lakhs",
+        description: "Get instant loan amounts of up to ₹5 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Vintage",
+        detail: "Minimum 2 years vintage required",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 23 to 65 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 710+ and above required",
+      },
+      {
+        id: "e4",
+        requirement: "USL Track",
+        detail: "Customer should have at least one USL track",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+    ],
+  },
+  {
     id: "incred-finance",
     bankName: "InCred Finance",
     logoBg: "from-orange-500 to-blue-800",
@@ -125,7 +377,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxTenure: "",
     processingTime: "Same Day Disbursement",
     contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "",
+    applyLink: "http://loan.gromo.in/in/lvCoDKrQPn",
     benefits: [
       {
         id: "b1",
@@ -357,90 +609,7 @@ export const banksInstantLoanData: BankLoanData[] = [
       },
     ],
   },
-  {
-    id: "hero-fincorp",
-    bankName: "Hero Fincorp",
-    logoBg: "from-green-500 to-green-900",
-    tagline: "Instant Loan (without Income Proof)",
-    productName: "Instant Loan",
-    roiStarting: "18.99% p.a.",
-    maxAmount: "₹3 Lakhs",
-    maxTenure: "Up to 60 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the instant loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Eligible loans can be disbursed on the same day.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Hussle Free Services",
-        description: "Hussle free services are available with the loan.",
-        iconName: "BadgeCheck",
-      },
-      {
-        id: "b4",
-        title: "Up to 60 Months Tenure",
-        description: "Flexible loan tenure of up to 60 months is available.",
-        iconName: "CalendarDays",
-      },
-      {
-        id: "b5",
-        title: "Loan Amount up to ₹3 Lakhs",
-        description: "Get instant loan amounts of up to ₹3 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Vintage",
-        detail: "Minimum 2 years vintage required",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 23 to 65 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 725+ and above required",
-      },
-      {
-        id: "e4",
-        requirement: "USL Track",
-        detail: "Customer should have at least one USL track",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-    ],
-  },
+
   {
     id: "lt-finance",
     bankName: "L&T Finance",
@@ -525,90 +694,7 @@ export const banksInstantLoanData: BankLoanData[] = [
       },
     ],
   },
-  {
-    id: "bajaj-finance",
-    bankName: "Bajaj Finance",
-    logoBg: "from-blue-600 to-blue-900",
-    tagline: "Instant Loan",
-    productName: "Instant Loan",
-    roiStarting: "17.50% p.a.",
-    maxAmount: "₹50 Lakhs",
-    maxTenure: "Up to 60 Months",
-    processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the instant loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Hussle Free Services",
-        description: "Hussle free services are available with the loan.",
-        iconName: "BadgeCheck",
-      },
-      {
-        id: "b3",
-        title: "Can Login All Location Files",
-        description: "Loan files can be logged in from all locations.",
-        iconName: "MapPin",
-      },
-      {
-        id: "b4",
-        title: "Up to 60 Months Tenure",
-        description: "Loan tenure is available for up to 60 months.",
-        iconName: "CalendarDays",
-      },
-      {
-        id: "b5",
-        title: "Loan Amount up to ₹50 Lakhs",
-        description: "Get instant loan amounts of up to ₹50 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Vintage",
-        detail: "Minimum 2 years vintage required",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 23 to 65 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 710+ and above required",
-      },
-      {
-        id: "e4",
-        requirement: "USL Track",
-        detail: "Customer should have at least one USL track",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-    ],
-  },
+
   {
     id: "aditya-birla-finance",
     bankName: "Aditya Birla Finance",
@@ -618,7 +704,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     roiStarting: "17.50% p.a.",
     maxAmount: "₹7 Lakhs",
     maxTenure: "Up to 60 Months",
-    processingTime: "",
+    processingTime: "https://wee.bnking.in/c/NTkwOTIzM",
     contactNumbers: ["7699578829", "7550951380"],
     applyLink: "",
     benefits: [
@@ -650,90 +736,6 @@ export const banksInstantLoanData: BankLoanData[] = [
         id: "b5",
         title: "Loan Amount up to ₹7 Lakhs",
         description: "Get instant loan amounts of up to ₹7 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Vintage",
-        detail: "Minimum 2 years vintage required",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 23 to 65 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 710+ and above required",
-      },
-      {
-        id: "e4",
-        requirement: "USL Track",
-        detail: "Customer should have at least one USL track",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-    ],
-  },
-  {
-    id: "indusind-bank",
-    bankName: "IndusInd Bank",
-    logoBg: "from-red-700 to-red-900",
-    tagline: "Instant Loan (without Income Proof)",
-    productName: "Instant Loan",
-    roiStarting: "17.50% p.a.",
-    maxAmount: "₹5 Lakhs",
-    maxTenure: "Up to 60 Months",
-    processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the instant loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Hussle Free Services",
-        description: "Hussle free services are available with the loan.",
-        iconName: "BadgeCheck",
-      },
-      {
-        id: "b3",
-        title: "Can Login All Location Files",
-        description: "Loan files can be logged in from all locations.",
-        iconName: "MapPin",
-      },
-      {
-        id: "b4",
-        title: "Up to 60 Months Tenure",
-        description: "Loan tenure is available for up to 60 months.",
-        iconName: "CalendarDays",
-      },
-      {
-        id: "b5",
-        title: "Loan Amount up to ₹5 Lakhs",
-        description: "Get instant loan amounts of up to ₹5 Lakhs.",
         iconName: "TrendingUp",
       },
     ],
