@@ -23,6 +23,7 @@ import {
   useNavigate,
   useRouter,
   useSearch,
+  Link,
 } from "@tanstack/react-router";
 
 export function PersonalLoan() {
@@ -54,6 +55,7 @@ export function PersonalLoan() {
       search: (prev) => ({
         ...prev,
         "bank-name": filteringToken,
+        
       }),
       resetScroll: false,
     });
@@ -100,18 +102,15 @@ export function PersonalLoan() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {filteredBanks.map((bank) => (
             <div
-              onClick={() => {
-                navigate({
-                  to: "/loans/personal-loan/$bankId",
-                  params: { bankId: bank.id },
-                });
-              }}
               key={bank.id}
               className="relative flex cursor-pointer flex-col justify-between overflow-hidden rounded-3xl border border-stone-800 bg-stone-900/90 p-6 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-amber-500/60"
             >
               <div className="absolute top-0 right-0 h-32 w-32 rounded-full bg-amber-500/5 blur-2xl transition group-hover:bg-amber-500/10"></div>
 
-              <div>
+              <Link
+                to="/loans/personal-loan/$bankId"
+                params={{ bankId: bank.id }}
+              >
                 {/* Bank Top Tag */}
                 <div className="mb-4 flex items-center justify-between">
                   <span className="rounded-full border border-stone-800 bg-stone-950 px-3 py-1 text-xs tracking-widest text-amber-400 uppercase">
@@ -154,37 +153,31 @@ export function PersonalLoan() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               <div className="@container">
                 <div
                   className={cn("grid grid-cols-1 gap-3 py-4 @sm:grid-cols-2")}
                 >
                   {/* View Eligibility */}
-                  <button
+                  <Link
+                    to="/loans/personal-loan/$bankId"
+                    params={{ bankId: bank.id }}
                     type="button"
                     className={cn(
-                      "group flex w-full items-center justify-center gap-2 rounded-md",
-                      "border-primary-400 border bg-transparent px-4 py-3",
-                      "text-primary-400 text-xs font-semibold",
-                      "transition duration-300",
-                      "hover:bg-primary-400 hover:text-stone-950",
+                      "group border-primary-400 text-primary-400 hover:bg-primary-400 flex w-full items-center justify-center gap-2 rounded-md border bg-transparent px-4 py-3 text-xs font-semibold transition duration-300 hover:text-stone-950",
                     )}
                   >
                     <span>View Eligibility & Docs</span>
 
                     <ChevronRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-                  </button>
+                  </Link>
 
                   {/* Apply Now */}
                   <a
                     href={bank.applyLink}
                     className={cn(
-                      "group flex w-full items-center justify-center gap-2 rounded-md",
-                      "border-primary-400 bg-primary-500 border px-4 py-3",
-                      "text-xs font-bold text-stone-950",
-                      "transition duration-300",
-                      "hover:border-primary-300 hover:bg-primary-300",
+                      "group border-primary-400 bg-primary-500 hover:border-primary-300 hover:bg-primary-300 flex w-full items-center justify-center gap-2 rounded-md border px-4 py-3 text-xs font-bold text-stone-950 transition duration-300",
                     )}
                   >
                     <span>Apply Now</span>

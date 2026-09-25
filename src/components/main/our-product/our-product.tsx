@@ -330,12 +330,6 @@ function ProductPanel({
             <h3 className="font-brand-secondary text-xl font-bold sm:text-2xl">
               {title}
             </h3>
-
-            <div className="flex flex-wrap items-center gap-2">
-              <h3 className="font-brand-secondary text-xl font-bold sm:text-2xl">
-                {title}
-              </h3>
-            </div>
           </div>
 
           <p className="text-foreground/55 mt-2 max-w-xl text-sm leading-6">

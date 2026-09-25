@@ -217,15 +217,6 @@ function LoanOverviewCard({ className, ...props }: ComponentProps<"div">) {
 
 const loanProducts = [
   {
-    icon: BadgeIndianRupee,
-    title: "Personal Loan",
-    description:
-      "Get financial support for medical needs, travel, weddings and other personal expenses.",
-    amount: "₹50K - ₹20L",
-    tenure: "6 - 60 Months",
-    productLink: "/loans/personal-loan",
-  },
-  {
     icon: Zap,
     title: "Instant Loan",
     description:
@@ -233,6 +224,15 @@ const loanProducts = [
     amount: "₹10K - ₹5L",
     tenure: "3 - 36 Months",
     productLink: "/loans/instant-loan",
+  },
+  {
+    icon: BadgeIndianRupee,
+    title: "Personal Loan",
+    description:
+      "Get financial support for medical needs, travel, weddings and other personal expenses.",
+    amount: "₹50K - ₹20L",
+    tenure: "6 - 60 Months",
+    productLink: "/loans/personal-loan",
   },
   {
     icon: CarFront,
