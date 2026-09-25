@@ -1500,7 +1500,7 @@ export const banksLoanData: BankLoanData[] = [
     maxTenure: "60 Months",
     processingTime: "Same Day Disbursement",
     contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/NTkwOTIzM ",
+    applyLink: "https://wee.bnking.in/c/NTkwOTIzM",
     benefits: [
       {
         id: "b1",
@@ -2119,7 +2119,7 @@ export const banksLoanData: BankLoanData[] = [
     maxTenure: "84 Months",
     processingTime: "Same Day Disbursement",
     contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/ZTEzOWFlY ",
+    applyLink: "https://wee.bnking.in/c/ZTEzOWFlY",
     benefits: [
       {
         id: "b1",
@@ -2539,7 +2539,7 @@ export const banksLoanData: BankLoanData[] = [
     maxTenure: "84 Months",
     processingTime: "Same Day Disbursement",
     contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/Zjg0ZmE1M ",
+    applyLink: "https://wee.bnking.in/c/Zjg0ZmE1M",
     benefits: [
       {
         id: "b1",
@@ -2749,7 +2749,7 @@ export const banksLoanData: BankLoanData[] = [
     maxTenure: "84 Months",
     processingTime: "Same Day Disbursement",
     contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/MWNkOTA1Y ",
+    applyLink: "https://wee.bnking.in/c/MWNkOTA1Y",
     benefits: [
       {
         id: "b1",

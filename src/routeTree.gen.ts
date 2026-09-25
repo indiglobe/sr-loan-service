@@ -21,6 +21,7 @@ import { Route as LoansInstantLoanIndexRouteImport } from './routes/loans/instan
 import { Route as LoansKycLoanIndexRouteImport } from './routes/loans/kyc-loan/index'
 import { Route as LoansLoanAgainstPropertyIndexRouteImport } from './routes/loans/loan-against-property/index'
 import { Route as LoansPersonalLoanIndexRouteImport } from './routes/loans/personal-loan/index'
+import { Route as LoansInstantLoanBankIdIndexRouteImport } from './routes/loans/instant-loan/$bankId/index'
 import { Route as LoansPersonalLoanBankIdIndexRouteImport } from './routes/loans/personal-loan/$bankId/index'
 
 const IndexRoute = IndexRouteImport.update({
@@ -84,6 +85,12 @@ const LoansPersonalLoanIndexRoute = LoansPersonalLoanIndexRouteImport.update({
   path: '/',
   getParentRoute: () => LoansPersonalLoanRouteRoute,
 } as any)
+const LoansInstantLoanBankIdIndexRoute =
+  LoansInstantLoanBankIdIndexRouteImport.update({
+    id: '/loans/instant-loan/$bankId/',
+    path: '/loans/instant-loan/$bankId/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const LoansPersonalLoanBankIdIndexRoute =
   LoansPersonalLoanBankIdIndexRouteImport.update({
     id: '/$bankId/',
@@ -104,6 +111,7 @@ export interface FileRoutesByFullPath {
   '/loans/kyc-loan/': typeof LoansKycLoanIndexRoute
   '/loans/loan-against-property/': typeof LoansLoanAgainstPropertyIndexRoute
   '/loans/personal-loan/': typeof LoansPersonalLoanIndexRoute
+  '/loans/instant-loan/$bankId/': typeof LoansInstantLoanBankIdIndexRoute
   '/loans/personal-loan/$bankId/': typeof LoansPersonalLoanBankIdIndexRoute
 }
 export interface FileRoutesByTo {
@@ -118,6 +126,7 @@ export interface FileRoutesByTo {
   '/loans/kyc-loan': typeof LoansKycLoanIndexRoute
   '/loans/loan-against-property': typeof LoansLoanAgainstPropertyIndexRoute
   '/loans/personal-loan': typeof LoansPersonalLoanIndexRoute
+  '/loans/instant-loan/$bankId': typeof LoansInstantLoanBankIdIndexRoute
   '/loans/personal-loan/$bankId': typeof LoansPersonalLoanBankIdIndexRoute
 }
 export interface FileRoutesById {
@@ -134,6 +143,7 @@ export interface FileRoutesById {
   '/loans/kyc-loan/': typeof LoansKycLoanIndexRoute
   '/loans/loan-against-property/': typeof LoansLoanAgainstPropertyIndexRoute
   '/loans/personal-loan/': typeof LoansPersonalLoanIndexRoute
+  '/loans/instant-loan/$bankId/': typeof LoansInstantLoanBankIdIndexRoute
   '/loans/personal-loan/$bankId/': typeof LoansPersonalLoanBankIdIndexRoute
 }
 export interface FileRouteTypes {
@@ -151,6 +161,7 @@ export interface FileRouteTypes {
     | '/loans/kyc-loan/'
     | '/loans/loan-against-property/'
     | '/loans/personal-loan/'
+    | '/loans/instant-loan/$bankId/'
     | '/loans/personal-loan/$bankId/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -165,6 +176,7 @@ export interface FileRouteTypes {
     | '/loans/kyc-loan'
     | '/loans/loan-against-property'
     | '/loans/personal-loan'
+    | '/loans/instant-loan/$bankId'
     | '/loans/personal-loan/$bankId'
   id:
     | '__root__'
@@ -180,6 +192,7 @@ export interface FileRouteTypes {
     | '/loans/kyc-loan/'
     | '/loans/loan-against-property/'
     | '/loans/personal-loan/'
+    | '/loans/instant-loan/$bankId/'
     | '/loans/personal-loan/$bankId/'
   fileRoutesById: FileRoutesById
 }
@@ -195,6 +208,7 @@ export interface RootRouteChildren {
   LoansInstantLoanIndexRoute: typeof LoansInstantLoanIndexRoute
   LoansKycLoanIndexRoute: typeof LoansKycLoanIndexRoute
   LoansLoanAgainstPropertyIndexRoute: typeof LoansLoanAgainstPropertyIndexRoute
+  LoansInstantLoanBankIdIndexRoute: typeof LoansInstantLoanBankIdIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -283,6 +297,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LoansPersonalLoanIndexRouteImport
       parentRoute: typeof LoansPersonalLoanRouteRoute
     }
+    '/loans/instant-loan/$bankId/': {
+      id: '/loans/instant-loan/$bankId/'
+      path: '/loans/instant-loan/$bankId'
+      fullPath: '/loans/instant-loan/$bankId/'
+      preLoaderRoute: typeof LoansInstantLoanBankIdIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/loans/personal-loan/$bankId/': {
       id: '/loans/personal-loan/$bankId/'
       path: '/$bankId'
@@ -321,6 +342,7 @@ const rootRouteChildren: RootRouteChildren = {
   LoansInstantLoanIndexRoute: LoansInstantLoanIndexRoute,
   LoansKycLoanIndexRoute: LoansKycLoanIndexRoute,
   LoansLoanAgainstPropertyIndexRoute: LoansLoanAgainstPropertyIndexRoute,
+  LoansInstantLoanBankIdIndexRoute: LoansInstantLoanBankIdIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
