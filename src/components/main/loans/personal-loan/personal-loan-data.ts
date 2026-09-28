@@ -467,6 +467,729 @@ export const banksLoanData: BankLoanData[] = [
     ],
   },
   {
+    id: "prefr",
+    bankName: "Prefr",
+    logoBg: "from-blue-700 to-indigo-900",
+    tagline: "SR Loan Services",
+    productName: "Personal Loan (UTM LINK)",
+    roiStarting: "12.99%",
+    maxAmount: "₹25 Lakhs",
+    maxTenure: "84 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/OGNhYjQ3O ",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Paperless application process.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Fast processing and quick payout.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Proprietorship Firm Support",
+        description: "Proprietorship firm can be sourced.",
+        iconName: "Briefcase",
+      },
+      {
+        id: "b4",
+        title: "Flexible Tenure",
+        description: "Up to 84 Months tenure.",
+        iconName: "Calendar",
+      },
+      {
+        id: "b5",
+        title: "High Loan Amount",
+        description: "Loan amount up to 25 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Salary",
+        detail: "Min 15k Salary required",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Age 21-58",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 700 and above",
+      },
+      {
+        id: "e4",
+        requirement: "Salary Account",
+        detail: "Salary should be credited online in bank account",
+      },
+      {
+        id: "e5",
+        requirement: "Repayment Track",
+        detail: "No DPD or Overdue allowed in last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "Kyc required (PAN & [Aadhaar Redacted])",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank statement",
+        category: "Financial Proof",
+      },
+      {
+        id: "d3",
+        documentName: "3 Month Salary Slip",
+        category: "Income Proof",
+      },
+      {
+        id: "d4",
+        documentName: "From 16/ 26AS /",
+        category: "Tax Proof",
+      },
+      {
+        id: "d5",
+        documentName: "Company Id card",
+        category: "Employment Proof",
+      },
+      {
+        id: "d6",
+        documentName: "Electric bill",
+        category: "Address Proof",
+      },
+    ],
+  },
+  {
+    id: "aditya-birla-capital",
+    bankName: "Aditya Birla Capital",
+    logoBg: "from-orange-500 to-red-700",
+    tagline: "SR Loan Service Recomended",
+    productName: "Personal Loan",
+    roiStarting: "10.99% p.a.",
+    maxAmount: "₹25 Lakhs",
+    maxTenure: "60 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/NTkwOTIzM",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the personal loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Eligible loans can be disbursed on the same day.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Zero Foreclosure Charges",
+        description: "Repay anytime with ZERO foreclosure charges.",
+        iconName: "DollarSign",
+      },
+      {
+        id: "b4",
+        title: "Flexible Tenure",
+        description: "Repay comfortably with up to 60 Months tenure.",
+        iconName: "Calendar",
+      },
+      {
+        id: "b5",
+        title: "High Loan Amount",
+        description: "Get approved for loan amounts up to ₹25 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Salary",
+        detail: "Min ₹18k salary required per month",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 21 to 58 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 700 and above required",
+      },
+      {
+        id: "e4",
+        requirement: "Salary Account",
+        detail: "Salary should be credited online in bank account",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+      {
+        id: "d3",
+        documentName: "3 Month Salary Slip",
+        category: "Income Proof",
+      },
+      {
+        id: "d4",
+        documentName: "Form 16 / 26AS",
+        category: "Tax Proof",
+      },
+      {
+        id: "d5",
+        documentName: "Company ID Card",
+        category: "Employment Proof",
+      },
+    ],
+  },
+  {
+    id: "hero-fincorp",
+    bankName: "Hero FinCorp",
+    logoBg: "from-green-500 to-emerald-700",
+    tagline: "Instant Personal Loan",
+    productName: "Personal Loan",
+    roiStarting: "14.99% p.a.",
+    maxAmount: "₹10 Lakhs",
+    maxTenure: "60 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["9732707100", "9474530839", "7407405050"],
+    applyLink: "https://wee.bnking.in/c/MzcwZmRjN",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the personal loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Eligible loans can be disbursed on the same day.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Proprietorship Firm Accepted",
+        description:
+          "Applicants working with proprietorship firms can be sourced.",
+        iconName: "Building2",
+      },
+      {
+        id: "b4",
+        title: "Flexible Tenure",
+        description: "Repay comfortably with up to 60 Months tenure.",
+        iconName: "Calendar",
+      },
+      {
+        id: "b5",
+        title: "High Loan Amount",
+        description: "Get approved for loan amounts up to ₹10 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Salary",
+        detail: "Min ₹15k salary required per month",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 21 to 58 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 700 and above required",
+      },
+      {
+        id: "e4",
+        requirement: "Salary Account",
+        detail: "Salary should be credited online in bank account",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+      {
+        id: "d3",
+        documentName: "3 Month Salary Slip",
+        category: "Income Proof",
+      },
+      {
+        id: "d4",
+        documentName: "Form 16 / 26AS",
+        category: "Tax Proof",
+      },
+      {
+        id: "d5",
+        documentName: "Company ID Card",
+        category: "Employment Proof",
+      },
+    ],
+  },
+  {
+    id: "bajaj-finance",
+    bankName: "Bajaj Finance",
+    logoBg: "from-blue-500 to-blue-800",
+    tagline: "SR Loan Service Recomended",
+    productName: "Personal Loan",
+    roiStarting: "12.99% p.a.",
+    maxAmount: "₹25 Lakhs",
+    maxTenure: "84 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/MWNkOTA1Y",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the personal loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Eligible loans can be disbursed on the same day.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Proprietorship Firm Accepted",
+        description:
+          "Applicants working with proprietorship firms can be sourced.",
+        iconName: "Building2",
+      },
+      {
+        id: "b4",
+        title: "Flexible Tenure",
+        description: "Repay comfortably with up to 84 Months tenure.",
+        iconName: "Calendar",
+      },
+      {
+        id: "b5",
+        title: "High Loan Amount",
+        description: "Get approved for loan amounts up to ₹25 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Salary",
+        detail: "Min ₹27k salary required per month",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 21 to 58 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 700 and above required",
+      },
+      {
+        id: "e4",
+        requirement: "Salary Account",
+        detail: "Salary should be credited online in bank account",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+      {
+        id: "d3",
+        documentName: "3 Month Salary Slip",
+        category: "Income Proof",
+      },
+      {
+        id: "d4",
+        documentName: "Form 16 / 26AS",
+        category: "Tax Proof",
+      },
+      {
+        id: "d5",
+        documentName: "Company ID Card",
+        category: "Employment Proof",
+      },
+      {
+        id: "d6",
+        documentName: "Electric Bill",
+        category: "Address Proof",
+      },
+    ],
+  },
+  {
+    id: "indusind-bank",
+    bankName: "IndusInd Bank",
+    logoBg: "from-red-700 to-red-900",
+    tagline: "SR Loan Service Recomended",
+    productName: "Personal Loan",
+    roiStarting: "12.99% p.a.",
+    maxAmount: "₹25 Lakhs",
+    maxTenure: "84 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/Zjg0ZmE1M",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the personal loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Eligible loans can be disbursed on the same day.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Proprietorship Firm Accepted",
+        description:
+          "Applicants working with proprietorship firms can be sourced.",
+        iconName: "Building2",
+      },
+      {
+        id: "b4",
+        title: "Flexible Tenure",
+        description: "Repay comfortably with up to 84 Months tenure.",
+        iconName: "Calendar",
+      },
+      {
+        id: "b5",
+        title: "High Loan Amount",
+        description: "Get approved for loan amounts up to ₹25 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Salary",
+        detail: "Min ₹20k salary required per month",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 21 to 58 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 700 and above required",
+      },
+      {
+        id: "e4",
+        requirement: "Salary Account",
+        detail: "Salary should be credited online in bank account",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+      {
+        id: "d3",
+        documentName: "3 Month Salary Slip",
+        category: "Income Proof",
+      },
+      {
+        id: "d4",
+        documentName: "Form 16 / 26AS",
+        category: "Tax Proof",
+      },
+      {
+        id: "d5",
+        documentName: "Company ID Card",
+        category: "Employment Proof",
+      },
+      {
+        id: "d6",
+        documentName: "Electric Bill",
+        category: "Address Proof",
+      },
+    ],
+  },
+  {
+    id: "yes-bank",
+    bankName: "YES Bank",
+    logoBg: "from-blue-700 to-red-600",
+    tagline: "SR Loan Service Recomended",
+    productName: "Personal Loan",
+    roiStarting: "12.99% p.a.",
+    maxAmount: "₹25 Lakhs",
+    maxTenure: "84 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["9732707100", "9474530839", "7407405050"],
+    applyLink: "https://wee.bnking.in/c/NjRlYzY1M ",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the personal loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Eligible loans can be disbursed on the same day.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Proprietorship Firm Accepted",
+        description:
+          "Applicants working with proprietorship firms can be sourced.",
+        iconName: "Building2",
+      },
+      {
+        id: "b4",
+        title: "Flexible Tenure",
+        description: "Repay comfortably with up to 84 Months tenure.",
+        iconName: "Calendar",
+      },
+      {
+        id: "b5",
+        title: "High Loan Amount",
+        description: "Get approved for loan amounts up to ₹25 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Salary",
+        detail: "Min ₹20k salary required per month",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 21 to 58 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 700 and above required",
+      },
+      {
+        id: "e4",
+        requirement: "Salary Account",
+        detail: "Salary should be credited online in bank account",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+      {
+        id: "d3",
+        documentName: "3 Month Salary Slip",
+        category: "Income Proof",
+      },
+      {
+        id: "d4",
+        documentName: "Form 16 / 26AS",
+        category: "Tax Proof",
+      },
+      {
+        id: "d5",
+        documentName: "Company ID Card",
+        category: "Employment Proof",
+      },
+      {
+        id: "d6",
+        documentName: "Electric Bill",
+        category: "Address Proof",
+      },
+    ],
+  },
+  {
+    id: "bajaj-finance-utm",
+    bankName: "Bajaj Finance",
+    logoBg: "from-blue-500 to-blue-800",
+    tagline: "SR Loan Service Recomended",
+    productName: "Personal Loan",
+    roiStarting: "12.99% p.a.",
+    maxAmount: "₹25 Lakhs",
+    maxTenure: "84 Months",
+    processingTime: "Same Day Disbursement",
+    contactNumbers: ["7699578829", "7550951380"],
+    applyLink: "https://wee.bnking.in/c/MWNkOTA1Y",
+    benefits: [
+      {
+        id: "b1",
+        title: "100% Digital Process",
+        description: "Complete the personal loan process digitally.",
+        iconName: "ShieldCheck",
+      },
+      {
+        id: "b2",
+        title: "Same Day Disbursement",
+        description: "Eligible loans can be disbursed on the same day.",
+        iconName: "Clock",
+      },
+      {
+        id: "b3",
+        title: "Proprietorship Firm Accepted",
+        description:
+          "Applicants working with proprietorship firms can be sourced.",
+        iconName: "Building2",
+      },
+      {
+        id: "b4",
+        title: "Flexible Tenure",
+        description: "Repay comfortably with up to 84 Months tenure.",
+        iconName: "Calendar",
+      },
+      {
+        id: "b5",
+        title: "High Loan Amount",
+        description: "Get approved for loan amounts up to ₹25 Lakhs.",
+        iconName: "TrendingUp",
+      },
+    ],
+    eligibility: [
+      {
+        id: "e1",
+        requirement: "Minimum Salary",
+        detail: "Min ₹15k salary required per month",
+      },
+      {
+        id: "e2",
+        requirement: "Age Limit",
+        detail: "Applicant age between 21 to 58 years",
+      },
+      {
+        id: "e3",
+        requirement: "CIBIL Score",
+        detail: "CIBIL Score 700 and above required",
+      },
+      {
+        id: "e4",
+        requirement: "Salary Account",
+        detail: "Salary should be credited online in bank account",
+      },
+      {
+        id: "e5",
+        requirement: "DPD / Overdue",
+        detail: "No DPD or overdue allowed in the last 6 months",
+      },
+    ],
+    requiredDocuments: [
+      {
+        id: "d1",
+        documentName: "KYC Documents (PAN & Aadhar)",
+        category: "Identity & Address",
+      },
+      {
+        id: "d2",
+        documentName: "6 Month Bank Statement",
+        category: "Financial Proof",
+      },
+      {
+        id: "d3",
+        documentName: "3 Month Salary Slip",
+        category: "Income Proof",
+      },
+      {
+        id: "d4",
+        documentName: "Form 16 / 26AS",
+        category: "Tax Proof",
+      },
+      {
+        id: "d5",
+        documentName: "Company ID Card",
+        category: "Employment Proof",
+      },
+      {
+        id: "d6",
+        documentName: "Electric Bill",
+        category: "Address Proof",
+      },
+    ],
+  },
+  {
     id: "shriram-finance",
     bankName: "Shriram Finance",
     logoBg: "from-amber-400 to-amber-500",
@@ -882,110 +1605,7 @@ export const banksLoanData: BankLoanData[] = [
       },
     ],
   },
-  {
-    id: "prefr",
-    bankName: "Prefr",
-    logoBg: "from-blue-700 to-indigo-900",
-    tagline: "SR Loan Services",
-    productName: "Personal Loan (UTM LINK)",
-    roiStarting: "12.99%",
-    maxAmount: "₹25 Lakhs",
-    maxTenure: "84 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/OGNhYjQ3O ",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Paperless application process.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Fast processing and quick payout.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Proprietorship Firm Support",
-        description: "Proprietorship firm can be sourced.",
-        iconName: "Briefcase",
-      },
-      {
-        id: "b4",
-        title: "Flexible Tenure",
-        description: "Up to 84 Months tenure.",
-        iconName: "Calendar",
-      },
-      {
-        id: "b5",
-        title: "High Loan Amount",
-        description: "Loan amount up to 25 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Salary",
-        detail: "Min 15k Salary required",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Age 21-58",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 700 and above",
-      },
-      {
-        id: "e4",
-        requirement: "Salary Account",
-        detail: "Salary should be credited online in bank account",
-      },
-      {
-        id: "e5",
-        requirement: "Repayment Track",
-        detail: "No DPD or Overdue allowed in last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "Kyc required (PAN & [Aadhaar Redacted])",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank statement",
-        category: "Financial Proof",
-      },
-      {
-        id: "d3",
-        documentName: "3 Month Salary Slip",
-        category: "Income Proof",
-      },
-      {
-        id: "d4",
-        documentName: "From 16/ 26AS /",
-        category: "Tax Proof",
-      },
-      {
-        id: "d5",
-        documentName: "Company Id card",
-        category: "Employment Proof",
-      },
-      {
-        id: "d6",
-        documentName: "Electric bill",
-        category: "Address Proof",
-      },
-    ],
-  },
+
   {
     id: "fibe",
     bankName: "Fibe",
@@ -1489,205 +2109,7 @@ export const banksLoanData: BankLoanData[] = [
       },
     ],
   },
-  {
-    id: "aditya-birla-capital",
-    bankName: "Aditya Birla Capital",
-    logoBg: "from-orange-500 to-red-700",
-    tagline: "SR Loan Service Recomended",
-    productName: "Personal Loan",
-    roiStarting: "10.99% p.a.",
-    maxAmount: "₹25 Lakhs",
-    maxTenure: "60 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/NTkwOTIzM",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Eligible loans can be disbursed on the same day.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Zero Foreclosure Charges",
-        description: "Repay anytime with ZERO foreclosure charges.",
-        iconName: "DollarSign",
-      },
-      {
-        id: "b4",
-        title: "Flexible Tenure",
-        description: "Repay comfortably with up to 60 Months tenure.",
-        iconName: "Calendar",
-      },
-      {
-        id: "b5",
-        title: "High Loan Amount",
-        description: "Get approved for loan amounts up to ₹25 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Salary",
-        detail: "Min ₹18k salary required per month",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 21 to 58 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 700 and above required",
-      },
-      {
-        id: "e4",
-        requirement: "Salary Account",
-        detail: "Salary should be credited online in bank account",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-      {
-        id: "d3",
-        documentName: "3 Month Salary Slip",
-        category: "Income Proof",
-      },
-      {
-        id: "d4",
-        documentName: "Form 16 / 26AS",
-        category: "Tax Proof",
-      },
-      {
-        id: "d5",
-        documentName: "Company ID Card",
-        category: "Employment Proof",
-      },
-    ],
-  },
-  {
-    id: "hero-fincorp",
-    bankName: "Hero FinCorp",
-    logoBg: "from-green-500 to-emerald-700",
-    tagline: "Instant Personal Loan",
-    productName: "Personal Loan",
-    roiStarting: "14.99% p.a.",
-    maxAmount: "₹10 Lakhs",
-    maxTenure: "60 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["9732707100", "9474530839", "7407405050"],
-    applyLink: "https://wee.bnking.in/c/MzcwZmRjN",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Eligible loans can be disbursed on the same day.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Proprietorship Firm Accepted",
-        description:
-          "Applicants working with proprietorship firms can be sourced.",
-        iconName: "Building2",
-      },
-      {
-        id: "b4",
-        title: "Flexible Tenure",
-        description: "Repay comfortably with up to 60 Months tenure.",
-        iconName: "Calendar",
-      },
-      {
-        id: "b5",
-        title: "High Loan Amount",
-        description: "Get approved for loan amounts up to ₹10 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Salary",
-        detail: "Min ₹15k salary required per month",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 21 to 58 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 700 and above required",
-      },
-      {
-        id: "e4",
-        requirement: "Salary Account",
-        detail: "Salary should be credited online in bank account",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-      {
-        id: "d3",
-        documentName: "3 Month Salary Slip",
-        category: "Income Proof",
-      },
-      {
-        id: "d4",
-        documentName: "Form 16 / 26AS",
-        category: "Tax Proof",
-      },
-      {
-        id: "d5",
-        documentName: "Company ID Card",
-        category: "Employment Proof",
-      },
-    ],
-  },
+
   {
     id: "werize",
     bankName: "WeRize",
@@ -2003,111 +2425,7 @@ export const banksLoanData: BankLoanData[] = [
       },
     ],
   },
-  {
-    id: "bajaj-finance",
-    bankName: "Bajaj Finance",
-    logoBg: "from-blue-500 to-blue-800",
-    tagline: "SR Loan Service Recomended",
-    productName: "Personal Loan",
-    roiStarting: "12.99% p.a.",
-    maxAmount: "₹25 Lakhs",
-    maxTenure: "84 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Eligible loans can be disbursed on the same day.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Proprietorship Firm Accepted",
-        description:
-          "Applicants working with proprietorship firms can be sourced.",
-        iconName: "Building2",
-      },
-      {
-        id: "b4",
-        title: "Flexible Tenure",
-        description: "Repay comfortably with up to 84 Months tenure.",
-        iconName: "Calendar",
-      },
-      {
-        id: "b5",
-        title: "High Loan Amount",
-        description: "Get approved for loan amounts up to ₹25 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Salary",
-        detail: "Min ₹27k salary required per month",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 21 to 58 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 700 and above required",
-      },
-      {
-        id: "e4",
-        requirement: "Salary Account",
-        detail: "Salary should be credited online in bank account",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-      {
-        id: "d3",
-        documentName: "3 Month Salary Slip",
-        category: "Income Proof",
-      },
-      {
-        id: "d4",
-        documentName: "Form 16 / 26AS",
-        category: "Tax Proof",
-      },
-      {
-        id: "d5",
-        documentName: "Company ID Card",
-        category: "Employment Proof",
-      },
-      {
-        id: "d6",
-        documentName: "Electric Bill",
-        category: "Address Proof",
-      },
-    ],
-  },
+
   {
     id: "poonawalla-fincorp",
     bankName: "Poonawalla Fincorp",
@@ -2473,321 +2791,6 @@ export const banksLoanData: BankLoanData[] = [
         id: "e1",
         requirement: "Minimum Salary",
         detail: "Min ₹25k salary required per month",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 21 to 58 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 700 and above required",
-      },
-      {
-        id: "e4",
-        requirement: "Salary Account",
-        detail: "Salary should be credited online in bank account",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-      {
-        id: "d3",
-        documentName: "3 Month Salary Slip",
-        category: "Income Proof",
-      },
-      {
-        id: "d4",
-        documentName: "Form 16 / 26AS",
-        category: "Tax Proof",
-      },
-      {
-        id: "d5",
-        documentName: "Company ID Card",
-        category: "Employment Proof",
-      },
-      {
-        id: "d6",
-        documentName: "Electric Bill",
-        category: "Address Proof",
-      },
-    ],
-  },
-  {
-    id: "indusind-bank",
-    bankName: "IndusInd Bank",
-    logoBg: "from-red-700 to-red-900",
-    tagline: "SR Loan Service Recomended",
-    productName: "Personal Loan",
-    roiStarting: "12.99% p.a.",
-    maxAmount: "₹25 Lakhs",
-    maxTenure: "84 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/Zjg0ZmE1M",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Eligible loans can be disbursed on the same day.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Proprietorship Firm Accepted",
-        description:
-          "Applicants working with proprietorship firms can be sourced.",
-        iconName: "Building2",
-      },
-      {
-        id: "b4",
-        title: "Flexible Tenure",
-        description: "Repay comfortably with up to 84 Months tenure.",
-        iconName: "Calendar",
-      },
-      {
-        id: "b5",
-        title: "High Loan Amount",
-        description: "Get approved for loan amounts up to ₹25 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Salary",
-        detail: "Min ₹20k salary required per month",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 21 to 58 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 700 and above required",
-      },
-      {
-        id: "e4",
-        requirement: "Salary Account",
-        detail: "Salary should be credited online in bank account",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-      {
-        id: "d3",
-        documentName: "3 Month Salary Slip",
-        category: "Income Proof",
-      },
-      {
-        id: "d4",
-        documentName: "Form 16 / 26AS",
-        category: "Tax Proof",
-      },
-      {
-        id: "d5",
-        documentName: "Company ID Card",
-        category: "Employment Proof",
-      },
-      {
-        id: "d6",
-        documentName: "Electric Bill",
-        category: "Address Proof",
-      },
-    ],
-  },
-  {
-    id: "yes-bank",
-    bankName: "YES Bank",
-    logoBg: "from-blue-700 to-red-600",
-    tagline: "SR Loan Service Recomended",
-    productName: "Personal Loan",
-    roiStarting: "12.99% p.a.",
-    maxAmount: "₹25 Lakhs",
-    maxTenure: "84 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["9732707100", "9474530839", "7407405050"],
-    applyLink: "https://wee.bnking.in/c/NjRlYzY1M ",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Eligible loans can be disbursed on the same day.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Proprietorship Firm Accepted",
-        description:
-          "Applicants working with proprietorship firms can be sourced.",
-        iconName: "Building2",
-      },
-      {
-        id: "b4",
-        title: "Flexible Tenure",
-        description: "Repay comfortably with up to 84 Months tenure.",
-        iconName: "Calendar",
-      },
-      {
-        id: "b5",
-        title: "High Loan Amount",
-        description: "Get approved for loan amounts up to ₹25 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Salary",
-        detail: "Min ₹20k salary required per month",
-      },
-      {
-        id: "e2",
-        requirement: "Age Limit",
-        detail: "Applicant age between 21 to 58 years",
-      },
-      {
-        id: "e3",
-        requirement: "CIBIL Score",
-        detail: "CIBIL Score 700 and above required",
-      },
-      {
-        id: "e4",
-        requirement: "Salary Account",
-        detail: "Salary should be credited online in bank account",
-      },
-      {
-        id: "e5",
-        requirement: "DPD / Overdue",
-        detail: "No DPD or overdue allowed in the last 6 months",
-      },
-    ],
-    requiredDocuments: [
-      {
-        id: "d1",
-        documentName: "KYC Documents (PAN & Aadhar)",
-        category: "Identity & Address",
-      },
-      {
-        id: "d2",
-        documentName: "6 Month Bank Statement",
-        category: "Financial Proof",
-      },
-      {
-        id: "d3",
-        documentName: "3 Month Salary Slip",
-        category: "Income Proof",
-      },
-      {
-        id: "d4",
-        documentName: "Form 16 / 26AS",
-        category: "Tax Proof",
-      },
-      {
-        id: "d5",
-        documentName: "Company ID Card",
-        category: "Employment Proof",
-      },
-      {
-        id: "d6",
-        documentName: "Electric Bill",
-        category: "Address Proof",
-      },
-    ],
-  },
-  {
-    id: "bajaj-finance-utm",
-    bankName: "Bajaj Finance",
-    logoBg: "from-blue-500 to-blue-800",
-    tagline: "SR Loan Service Recomended",
-    productName: "Personal Loan",
-    roiStarting: "12.99% p.a.",
-    maxAmount: "₹25 Lakhs",
-    maxTenure: "84 Months",
-    processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
-    applyLink: "https://wee.bnking.in/c/MWNkOTA1Y",
-    benefits: [
-      {
-        id: "b1",
-        title: "100% Digital Process",
-        description: "Complete the personal loan process digitally.",
-        iconName: "ShieldCheck",
-      },
-      {
-        id: "b2",
-        title: "Same Day Disbursement",
-        description: "Eligible loans can be disbursed on the same day.",
-        iconName: "Clock",
-      },
-      {
-        id: "b3",
-        title: "Proprietorship Firm Accepted",
-        description:
-          "Applicants working with proprietorship firms can be sourced.",
-        iconName: "Building2",
-      },
-      {
-        id: "b4",
-        title: "Flexible Tenure",
-        description: "Repay comfortably with up to 84 Months tenure.",
-        iconName: "Calendar",
-      },
-      {
-        id: "b5",
-        title: "High Loan Amount",
-        description: "Get approved for loan amounts up to ₹25 Lakhs.",
-        iconName: "TrendingUp",
-      },
-    ],
-    eligibility: [
-      {
-        id: "e1",
-        requirement: "Minimum Salary",
-        detail: "Min ₹15k salary required per month",
       },
       {
         id: "e2",
