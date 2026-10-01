@@ -135,7 +135,7 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
               <div>
                 <p className="text-foreground/40 text-xs">Call us</p>
 
-                <p className="mt-0.5 text-sm font-semibold">+91 98765 43210</p>
+                <p className="mt-0.5 text-sm font-semibold">+91 86957 24426</p>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export function Footer({ className, ...props }: ComponentProps<"footer">) {
                 <p className="text-foreground/40 text-xs">Email us</p>
 
                 <p className="mt-0.5 text-sm font-semibold break-all">
-                  support@srloanservice.com
+                  sumantadas.bhp1@gmail.com
                 </p>
               </div>
             </div>

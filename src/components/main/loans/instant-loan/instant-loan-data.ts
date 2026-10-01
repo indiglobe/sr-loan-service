@@ -45,7 +45,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "",
     processingTime: "Quick Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/ZTEzOWFlY",
     benefits: [
       {
@@ -124,7 +124,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹3 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/MzcwZmRjN",
     benefits: [
       {
@@ -208,7 +208,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹50 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/MWNkOTA1Y",
     benefits: [
       {
@@ -292,7 +292,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/Zjg0ZmE1M",
     benefits: [
       {
@@ -376,7 +376,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "72 Lakh",
     maxTenure: "",
     processingTime: "Same Day Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "http://loan.gromo.in/in/lvCoDKrQPn",
     benefits: [
       {
@@ -461,7 +461,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹7 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "https://wee.bnking.in/c/NTkwOTIzM",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/NTkwOTIzM",
     benefits: [
       {
@@ -708,7 +708,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹7 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/ZjhjNTYzZ",
     benefits: [
       {
@@ -792,7 +792,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/NTRjYzMzM",
     benefits: [
       {
@@ -876,7 +876,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "https://wee.bnking.in/c/NGI0ZmY3N",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -960,7 +960,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹10 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "https://wee.bnking.in/c/OWE1OWZkY",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1044,7 +1044,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "https://wee.bnking.in/c/OTJjMzU0M",
     benefits: [
       {
@@ -1128,7 +1128,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "",
     processingTime: "Quick Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1207,7 +1207,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹75 Lakhs",
     maxTenure: "",
     processingTime: "Quick Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1291,7 +1291,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "",
     processingTime: "Quick Disbursement",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1455,7 +1455,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1539,7 +1539,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1624,7 +1624,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 36 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1708,7 +1708,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹10 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1792,7 +1792,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1876,7 +1876,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -1961,7 +1961,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹3 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -2045,7 +2045,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹3 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -2130,7 +2130,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹2 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -2214,7 +2214,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
@@ -2382,7 +2382,7 @@ export const banksInstantLoanData: BankLoanData[] = [
     maxAmount: "₹5 Lakhs",
     maxTenure: "Up to 60 Months",
     processingTime: "",
-    contactNumbers: ["7699578829", "7550951380"],
+    contactNumbers: ["7699578829"],
     applyLink: "",
     benefits: [
       {
