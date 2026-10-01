@@ -80,7 +80,17 @@ export function InstantLoan() {
               placeholder="Search bank name or loan type..."
               value={searchQuery}
               onChange={(e) => filterBanks(e.target.value)}
-              className="w-full rounded-md border border-stone-800 bg-stone-950 px-11 py-2.5 text-sm text-stone-100 placeholder-stone-500 transition focus:border-amber-500 focus:outline-none"
+              className={cn(
+                "ml-auto w-full sm:w-96",
+                "rounded-xl border border-stone-800",
+                "bg-stone-950",
+                "px-4 py-3",
+                "text-sm text-stone-100",
+                "placeholder:text-stone-500",
+                "transition",
+                "focus:border-amber-500",
+                "focus:outline-none",
+              )}
             />
             <button
               type="button"
@@ -100,7 +110,12 @@ export function InstantLoan() {
         </div>
 
         {/* Banks Grid */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* Banks Grid */}
+        <div
+          className={cn(
+            "2xs:px-5 mx-auto grid w-full max-w-7xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3 lg:px-8",
+          )}
+        >
           {filteredBanks.map((bank) => (
             <div
               key={bank.id}
@@ -113,11 +128,40 @@ export function InstantLoan() {
                 params={{ bankId: bank.id }}
               >
                 {/* Bank Top Tag */}
-                <div className="mb-4 flex items-center justify-between">
-                  <span className="rounded-full border border-stone-800 bg-stone-950 px-3 py-1 text-xs tracking-widest text-amber-400 uppercase">
+                {/* Bank Top Tag */}
+                <div className="mb-5 flex items-start gap-3">
+                  <span
+                    className={cn(
+                      "flex-1 rounded-2xl",
+                      "border border-stone-800",
+                      "bg-stone-950",
+                      "px-4 py-2.5",
+                      "text-[11px] leading-4",
+                      "font-medium tracking-[0.12em]",
+                      "text-amber-400 uppercase",
+                    )}
+                  >
                     {bank.tagline}
                   </span>
-                  <Building2 className="h-5 w-5 text-stone-500 transition group-hover:text-amber-400" />
+
+                  <div
+                    className={cn(
+                      "flex size-10 shrink-0",
+                      "items-center justify-center",
+                      "rounded-xl",
+                      "border border-stone-800",
+                      "bg-stone-950",
+                    )}
+                  >
+                    <Building2
+                      className={cn(
+                        "size-4",
+                        "text-stone-500",
+                        "transition",
+                        "group-hover:text-amber-400",
+                      )}
+                    />
+                  </div>
                 </div>
 
                 <h3 className="mb-1 text-2xl font-black text-white transition group-hover:text-amber-400">
